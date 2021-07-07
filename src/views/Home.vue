@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <h1>Hola Esto es un mesaje de prueba</h1>
     
   </div>
 </template>
