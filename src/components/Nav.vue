@@ -3,14 +3,19 @@
 		<img class="nav__logo" src="..\assets\Logotipo__Blog.svg" alt="" />
 		<div @click="menuDesplegable()" class="nav__icono--menu"></div>
 		<div class="nav__menu--responsive">
-			<a href="#inicio">Inicio</a><a href="#sobreMi">Sobre Mi</a
-			><a href="#habilidades">Habilidades</a><a href="#contacto"></a
-			><a href="#sociales">Sociales</a>
+			<a href="#inicio">Inicio <span>|</span></a
+			><a href="#sobreMi">Sobre Mi <span>|</span></a
+			><a href="#habilidades">Habilidades <span>|</span></a
+			><a href="#contacto">Contacto <span>|</span></a
+			><a href="#sociales">Sociales <span>|</span></a>
 		</div>
 	</nav>
 	<section class="menu--desplegable">
-		<a href="#inicio">Inicio</a><a href="#sobreMi">Sobre Mi</a><a href="#habilidades">Habilidades</a
-		><a href="#contacto"></a><a href="#sociales">Sociales</a>
+		<div class="menu__enlaces">
+			<a href="#inicio">Inicio</a><a href="#sobreMi">Sobre Mi</a
+			><a href="#habilidades">Habilidades</a><a href="#contacto">Contacto</a
+			><a href="#sociales">Sociales</a>
+		</div>
 	</section>
 </template>
 
@@ -31,14 +36,15 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #161616;
-	box-shadow: 0 1px 5.3px rgba(0, 0, 0, 0.013), 0 2.1px 10.7px rgba(0, 0, 0, 0.026),
-		0 3.5px 16px rgba(0, 0, 0, 0.039), 0 5.3px 21.3px rgba(0, 0, 0, 0.051),
-		0 7.6px 26.5px rgba(0, 0, 0, 0.064), 0 10.8px 31.6px rgba(0, 0, 0, 0.076),
-		0 15.3px 36.5px rgba(0, 0, 0, 0.088), 0 22.3px 40.9px rgba(0, 0, 0, 0.099),
-		0 34.3px 44.3px rgba(0, 0, 0, 0.107), 0 61px 29px rgba(0, 0, 0, 0.07);
+	background-color: #252525;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.245), 0 6.7px 5.3px rgba(0, 0, 0, 0.241),
+		0 12.5px 10px rgba(0, 0, 0, 0.225), 0 22.3px 17.9px rgba(0, 0, 0, 0.204),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.182), 0 100px 80px rgba(0, 0, 0, 0.16);
 	height: 6rem;
 	width: 100%;
+
+	position: fixed;
+	z-index: 99999;
 	.nav__logo {
 		height: 5rem;
 		width: auto;
@@ -54,38 +60,49 @@ nav {
 	}
 	.nav__menu--responsive {
 		margin: 1rem 2rem 0 0;
-		display: flex;
-
-		gap: 1rem;
 		display: none;
+		span {
+			margin-left: 1rem;
+			color: #5a189a;
+		}
 		a {
 			text-decoration: none;
-			color: #5a189a;
+			color: #ffffff;
 			margin-right: 1.5rem;
-			&:hover {
-				transform: scale(1.5);
-			}
-			&:nth-child(4) {
-				margin-left: -1.5rem;
-			}
+			font-weight: 600;
+			letter-spacing: 3px;
+			font-family: "Cormorant Garamond", serif;
 		}
 	}
 }
 .menu--desplegable {
 	width: 100%;
 	height: 100vh;
-	background-color: red;
+	background-color: #282828;
 	transform: scale(0);
 	transition-duration: 0.4s;
 	transform-origin: center;
 	transition-timing-function: linear;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	a {
-		display: block;
-		width: 100%;
+
+	.menu__enlaces {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 4rem;
+		margin-top: 5rem;
+		text-align: center;
+		a {
+			text-decoration: none;
+			color: #ffffff;
+			font-weight: 600;
+			letter-spacing: 3px;
+			font-family: "Cormorant Garamond", serif;
+			&:hover {
+				color: #5a189a;
+			}
+		}
 	}
 }
 .ampliar {
