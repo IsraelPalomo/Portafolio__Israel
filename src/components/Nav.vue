@@ -26,17 +26,19 @@ export default {
 			const iconoMenu = document.querySelector(".nav__icono--menu");
 			const menu = document.querySelector(".menu--desplegable");
 			menu.classList.toggle("ampliar");
+			iconoMenu.classList.toggle("cambio");
 		},
 	},
 };
 </script>
 
 <style lang="scss">
+@import "../scss/_variables.scss";
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #252525;
+	background-color: $color-oscuro;
 	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.245), 0 6.7px 5.3px rgba(0, 0, 0, 0.241),
 		0 12.5px 10px rgba(0, 0, 0, 0.225), 0 22.3px 17.9px rgba(0, 0, 0, 0.204),
 		0 41.8px 33.4px rgba(0, 0, 0, 0.182), 0 100px 80px rgba(0, 0, 0, 0.16);
@@ -58,27 +60,30 @@ nav {
 		margin: 1rem 2rem 0 0;
 		align-self: center;
 	}
+	.cambio {
+		background-image: url("../assets/Icono__Menu--Cerrar.svg");
+	}
 	.nav__menu--responsive {
 		margin: 1rem 2rem 0 0;
 		display: none;
 		span {
 			margin-left: 1rem;
-			color: #5a189a;
+			color: $color-principal;
 		}
 		a {
 			text-decoration: none;
-			color: #ffffff;
+			color: $color-blanco;
 			margin-right: 1.5rem;
 			font-weight: 600;
 			letter-spacing: 3px;
-			font-family: "Cormorant Garamond", serif;
+			font-family: $tipografia-subtitulos;
 		}
 	}
 }
 .menu--desplegable {
 	width: 100%;
 	height: 100vh;
-	background-color: #282828;
+	background-color: $color-oscuro;
 	transform: scale(0);
 	transition-duration: 0.4s;
 	transform-origin: center;
@@ -95,12 +100,14 @@ nav {
 		text-align: center;
 		a {
 			text-decoration: none;
-			color: #ffffff;
+			color: $color-blanco;
 			font-weight: 600;
 			letter-spacing: 3px;
-			font-family: "Cormorant Garamond", serif;
+			font-family: $tipografia-subtitulos;
 			&:hover {
-				color: #5a189a;
+				color: $color-principal;
+				transform: scale(1.2);
+				transition: 0.5s ease;
 			}
 		}
 	}
