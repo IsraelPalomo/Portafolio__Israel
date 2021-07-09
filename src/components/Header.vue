@@ -32,7 +32,7 @@ header {
 		font-family: $tipografia-titulos;
 		padding: 1em;
 		backdrop-filter: blur(5px);
-		-webkit-backdrop-filter: blur(5px);
+		-webkit--filter: blur(5px);
 		border: 2px solid $color-blanco;
 
 		max-width: 700px;
