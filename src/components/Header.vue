@@ -42,7 +42,7 @@ header {
 		color: $color-blanco;
 		font-family: $tipografia-subtitulos;
 		width: 80%;
-		margin: -2rem auto 0 auto;
+		margin: -4rem auto 0 auto;
 		padding: 1rem;
 		background-color: $color-principal;
 		border-radius: 15px;
@@ -55,7 +55,7 @@ header {
 	.header__icono {
 		color: $color-blanco;
 		font-size: 2rem;
-		margin-bottom: 2rem;
+		margin-bottom: 4rem;
 		animation-name: pulso;
 		animation-duration: 1s;
 		animation-iteration-count: infinite;
