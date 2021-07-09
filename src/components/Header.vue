@@ -55,7 +55,7 @@ header {
 	.header__icono {
 		color: $color-blanco;
 		font-size: 2rem;
-		margin-bottom: 4rem;
+		margin-bottom: 5rem;
 		animation-name: pulso;
 		animation-duration: 1s;
 		animation-iteration-count: infinite;
