@@ -54,10 +54,11 @@ nav {
 	position: sticky;
 	top: 0;
 
-	z-index: 99999;
+	z-index: 999999;
 	.nav__logo {
 		height: 5rem;
 		width: auto;
+		cursor: pointer;
 	}
 	.nav__icono--menu {
 		height: 2rem;

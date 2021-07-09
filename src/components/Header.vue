@@ -44,7 +44,7 @@ header {
 		color: $color-blanco;
 		font-family: $tipografia-titulos;
 		padding: 1em;
-		backdrop-filter: blur(5px);
+		backdrop-filter: blur(4px);
 		-webkit--filter: blur(5px);
 		border: 2px solid $color-blanco;
 
@@ -77,7 +77,7 @@ header {
 	.header__proyectos {
 		width: 36rem;
 		height: 27rem;
-		margin-top: 5rem;
+
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: center;
