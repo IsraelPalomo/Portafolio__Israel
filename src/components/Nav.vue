@@ -12,9 +12,11 @@
 	</nav>
 	<section class="menu--desplegable">
 		<div class="menu__enlaces">
-			<a href="#inicio">Inicio</a><a href="#sobreMi">Sobre Mi</a
-			><a href="#habilidades">Habilidades</a><a href="#contacto">Contacto</a
-			><a href="#sociales">Sociales</a>
+			<a href="#inicio" @click="menuDesplegable()">Inicio</a
+			><a href="#sobreMi" @click="menuDesplegable()">Sobre Mi</a
+			><a href="#habilidades" @click="menuDesplegable()">Habilidades</a
+			><a href="#contacto" @click="menuDesplegable()">Contacto</a
+			><a href="#sociales" @click="menuDesplegable()">Sociales</a>
 		</div>
 	</section>
 </template>
@@ -23,10 +25,12 @@
 export default {
 	methods: {
 		menuDesplegable() {
+			const body = document.getElementsByTagName("body")[0];
 			const iconoMenu = document.querySelector(".nav__icono--menu");
 			const menu = document.querySelector(".menu--desplegable");
 			menu.classList.toggle("ampliar");
 			iconoMenu.classList.toggle("cambio");
+			body.classList.toggle("hidden");
 		},
 	},
 };
@@ -34,6 +38,9 @@ export default {
 
 <style lang="scss">
 @import "../scss/_variables.scss";
+.hidden {
+	overflow: hidden;
+}
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -91,6 +98,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: fixed;
 
 	.menu__enlaces {
 		display: grid;
@@ -130,6 +138,9 @@ nav {
 		.nav__menu--responsive {
 			display: block;
 		}
+	}
+	.menu--desplegable {
+		display: none;
 	}
 }
 @media (min-width: 1200px) {

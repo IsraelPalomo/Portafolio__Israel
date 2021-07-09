@@ -7,5 +7,8 @@
 	box-shadow: border-box;
 	margin: 0;
 	padding: 0;
+	:focus {
+		outline: none;
+	}
 }
 </style>
