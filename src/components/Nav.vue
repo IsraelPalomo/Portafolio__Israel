@@ -100,12 +100,13 @@ nav {
 	justify-content: center;
 	align-items: center;
 	position: fixed;
+	z-index: 99999;
 
 	.menu__enlaces {
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: 4rem;
-		margin-top: 5rem;
+		margin-top: -6rem;
 		text-align: center;
 		a {
 			text-decoration: none;

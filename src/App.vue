@@ -10,5 +10,6 @@
 	:focus {
 		outline: none;
 	}
+	scroll-behavior: smooth;
 }
 </style>
