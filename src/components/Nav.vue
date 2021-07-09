@@ -36,7 +36,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../scss/_variables.scss";
 .hidden {
 	overflow: hidden;
@@ -51,8 +51,9 @@ nav {
 		0 41.8px 33.4px rgba(0, 0, 0, 0.182), 0 100px 80px rgba(0, 0, 0, 0.16);
 	height: 6rem;
 	width: 100%;
+	position: sticky;
+	top: 0;
 
-	position: fixed;
 	z-index: 99999;
 	.nav__logo {
 		height: 5rem;
