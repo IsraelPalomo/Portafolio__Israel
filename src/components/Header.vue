@@ -10,13 +10,19 @@
 		</div>
 		<div class="header__proyectos">
 			<a href="https://venta-de-casas-y-pisos.netlify.app/" target="_blank">
-				<div class="header__proyectos__proyecto--1"></div>
+				<div class="header__proyectos__proyecto--1">
+					<img src="..\assets\portatil.png" alt="" />
+				</div>
 			</a>
 			<a href="https://hotel-philidor.netlify.app/" target="_blank">
-				<div class="header__proyectos__proyecto--2"></div>
+				<div class="header__proyectos__proyecto--2">
+					<img src="..\assets\movil.png" alt="" />
+				</div>
 			</a>
 			<a href="https://app-tiempo-israel.netlify.app/" target="_blank">
-				<div class="header__proyectos__proyecto--3"></div>
+				<div class="header__proyectos__proyecto--3">
+					<img src="..\assets\tv.png" alt="" />
+				</div>
 			</a>
 		</div>
 	</header>
@@ -53,7 +59,7 @@ header {
 		width: auto;
 	}
 	h2 {
-		color: $color-blanco;
+		color: $color-oscuro;
 		font-family: $tipografia-subtitulos;
 		width: 80%;
 		margin: -4rem auto 0 auto;
@@ -83,79 +89,69 @@ header {
 		justify-content: center;
 		align-items: center;
 		display: none;
+		margin-left: 5rem;
+		margin-top: -7rem;
+		&:hover {
+			.header__proyectos__proyecto--1 {
+				transform: scale(1.3);
+				transition: 1s ease;
+				filter: drop-shadow(10px 10px 10px #000);
+				transform: perspective(300px) translateY(40deg);
+			}
+			.header__proyectos__proyecto--2 {
+				transform: scale(1.2);
+				transition: 1s ease;
+				filter: drop-shadow(10px 10px 10px #000);
+				transform: perspective(400px) translateY(35deg);
+			}
+			.header__proyectos__proyecto--3 {
+				transform: scale(1.1);
+				transition: 1s ease;
+				filter: drop-shadow(10px 10px 10px #000);
+				transform: perspective(340px) translateY(27deg);
+			}
+		}
 
 		.header__proyectos__proyecto--1 {
-			border-radius: 15px;
-			cursor: pointer;
-			width: 20rem;
-			height: 15rem;
-			background-image: url("../assets/proyecto1.png");
-			background-position: center;
-			background-size: cover;
-			position: relative;
-			top: 5rem;
-			right: -8rem;
-			border: 2px solid white;
-			z-index: 99999;
-			transform: perspective(400px) rotateY(-15deg);
-			box-shadow: 0 2.6px 2.2px rgba(0, 0, 0, 0.056), 0 6.2px 5.3px rgba(0, 0, 0, 0.081),
-				0 11.6px 10px rgba(0, 0, 0, 0.1), 0 20.8px 17.9px rgba(0, 0, 0, 0.119),
-				0 38.9px 33.4px rgba(0, 0, 0, 0.144), 0 93px 80px rgba(0, 0, 0, 0.2);
-
-			&:hover {
-				transform: scale(1.1);
-				z-index: 999999;
-				transition-duration: 1s;
+			img {
+				width: 45rem;
+				height: 25rem;
 			}
+
+			cursor: pointer;
+
+			position: relative;
+			top: 15rem;
+			right: 10rem;
+
+			z-index: 99999;
 		}
 		.header__proyectos__proyecto--2 {
-			border-radius: 15px;
-			cursor: pointer;
-			width: 20rem;
-			height: 15rem;
-			background-image: url("../assets/proyecto4.png");
-			background-position: center;
-			background-size: cover;
-
-			border: 2px solid white;
-			position: relative;
-
-			right: -3rem;
-			z-index: 999;
-			transform: perspective(400px) rotateY(-20deg);
-			box-shadow: 0 2.6px 2.2px rgba(0, 0, 0, 0.056), 0 6.2px 5.3px rgba(0, 0, 0, 0.081),
-				0 11.6px 10px rgba(0, 0, 0, 0.1), 0 20.8px 17.9px rgba(0, 0, 0, 0.119),
-				0 38.9px 33.4px rgba(0, 0, 0, 0.144), 0 93px 80px rgba(0, 0, 0, 0.2);
-
-			&:hover {
-				transform: scale(1.1);
-				z-index: 999999;
-				transition-duration: 1s;
+			img {
+				width: 8rem;
+				height: 13rem;
 			}
+
+			cursor: pointer;
+
+			position: relative;
+			top: -10rem;
+			right: -10rem;
+			z-index: 99999;
 		}
 		.header__proyectos__proyecto--3 {
-			border-radius: 15px;
-			cursor: pointer;
-			width: 20rem;
-			height: 25rem;
-			background-image: url("../assets/proyecto5.png");
-			background-position: center;
-			background-size: cover;
-			position: relative;
-			top: -30rem;
-			right: -12rem;
-			border: 2px solid white;
-			z-index: 999;
-			transform: perspective(400px) rotateY(-15deg);
-			box-shadow: 0 2.6px 2.2px rgba(0, 0, 0, 0.056), 0 6.2px 5.3px rgba(0, 0, 0, 0.081),
-				0 11.6px 10px rgba(0, 0, 0, 0.1), 0 20.8px 17.9px rgba(0, 0, 0, 0.119),
-				0 38.9px 33.4px rgba(0, 0, 0, 0.144), 0 93px 80px rgba(0, 0, 0, 0.2);
-
-			&:hover {
-				transform: scale(1.1);
-				z-index: 999999;
-				transition-duration: 1s;
+			img {
+				width: 65rem;
+				height: 35rem;
 			}
+
+			cursor: pointer;
+
+			position: relative;
+			top: -40rem;
+			right: 23rem;
+
+			z-index: 999;
 		}
 	}
 }
