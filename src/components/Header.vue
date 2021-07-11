@@ -95,19 +95,19 @@ header {
 			.header__proyectos__proyecto--1 {
 				transform: scale(1.3);
 				transition: 1s ease;
-				filter: drop-shadow(10px 10px 10px #000);
+				filter: drop-shadow(30px 30px 15px #000);
 				transform: perspective(300px) translateY(40deg);
 			}
 			.header__proyectos__proyecto--2 {
 				transform: scale(1.2);
 				transition: 1s ease;
-				filter: drop-shadow(10px 10px 10px #000);
+				filter: drop-shadow(30px 30px 15px #000);
 				transform: perspective(400px) translateY(35deg);
 			}
 			.header__proyectos__proyecto--3 {
 				transform: scale(1.1);
 				transition: 1s ease;
-				filter: drop-shadow(10px 10px 10px #000);
+				filter: drop-shadow(30px 30px 15px #000);
 				transform: perspective(340px) translateY(27deg);
 			}
 		}
@@ -141,15 +141,15 @@ header {
 		}
 		.header__proyectos__proyecto--3 {
 			img {
-				width: 65rem;
-				height: 35rem;
+				width: 32rem;
+				height: 23rem;
 			}
 
 			cursor: pointer;
 
 			position: relative;
-			top: -40rem;
-			right: 23rem;
+			top: -30rem;
+			right: 0rem;
 
 			z-index: 999;
 		}
