@@ -14,12 +14,12 @@
 					<img src="..\assets\portatil.png" alt="" />
 				</div>
 			</a>
-			<a href="https://hotel-philidor.netlify.app/" target="_blank">
+			<a href="https://app-tiempo-israel.netlify.app/" target="_blank">
 				<div class="header__proyectos__proyecto--2">
 					<img src="..\assets\movil.png" alt="" />
 				</div>
 			</a>
-			<a href="https://app-tiempo-israel.netlify.app/" target="_blank">
+			<a href="https://hotel-philidor.netlify.app/" target="_blank">
 				<div class="header__proyectos__proyecto--3">
 					<img src="..\assets\tv.png" alt="" />
 				</div>
@@ -93,31 +93,32 @@ header {
 		margin-top: -7rem;
 		&:hover {
 			.header__proyectos__proyecto--1 {
-				transform: scale(1.3);
-				transition: 1s ease;
-				filter: drop-shadow(30px 30px 15px #000);
-				transform: perspective(300px) translateY(40deg);
+				img {
+					transition: 1s ease;
+					transform: translateX(50px);
+				}
 			}
 			.header__proyectos__proyecto--2 {
-				transform: scale(1.2);
-				transition: 1s ease;
-				filter: drop-shadow(30px 30px 15px #000);
-				transform: perspective(400px) translateY(35deg);
+				img {
+					transition: 1s ease;
+					transform: translateX(-100px);
+				}
 			}
 			.header__proyectos__proyecto--3 {
-				transform: scale(1.1);
-				transition: 1s ease;
-				filter: drop-shadow(30px 30px 15px #000);
-				transform: perspective(340px) translateY(27deg);
+				img {
+					transition: 1s ease;
+					transform: translateX(-70px);
+				}
 			}
 		}
 
 		.header__proyectos__proyecto--1 {
 			img {
-				width: 45rem;
-				height: 25rem;
+				width: 25rem;
+				height: 15rem;
+				filter: drop-shadow(30px 30px 15px #000);
 			}
-
+			transform: perspective(800px) rotateY(-45deg);
 			cursor: pointer;
 
 			position: relative;
@@ -130,25 +131,28 @@ header {
 			img {
 				width: 8rem;
 				height: 13rem;
+				filter: drop-shadow(30px 30px 15px #000);
 			}
 
 			cursor: pointer;
 
 			position: relative;
-			top: -10rem;
+			top: 0rem;
 			right: -10rem;
 			z-index: 99999;
+			transform: perspective(800px) rotateY(-45deg);
 		}
 		.header__proyectos__proyecto--3 {
 			img {
-				width: 32rem;
-				height: 23rem;
+				width: 35rem;
+				height: 25rem;
+				filter: drop-shadow(30px 30px 15px #000);
 			}
-
+			transform: perspective(800px) rotateY(-45deg);
 			cursor: pointer;
 
 			position: relative;
-			top: -30rem;
+			top: -25rem;
 			right: 0rem;
 
 			z-index: 999;
