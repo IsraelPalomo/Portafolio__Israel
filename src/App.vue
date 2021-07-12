@@ -12,4 +12,7 @@
 	}
 	scroll-behavior: smooth;
 }
+html {
+	box-shadow: border-box;
+}
 </style>

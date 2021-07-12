@@ -76,7 +76,7 @@ header {
 		.header__icono__enlace {
 			color: $color-blanco;
 			font-size: 2rem;
-			margin-bottom: 5rem;
+			margin-bottom: 1.5rem;
 		}
 	}
 
