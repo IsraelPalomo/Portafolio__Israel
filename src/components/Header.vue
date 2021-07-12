@@ -94,19 +94,19 @@ header {
 		&:hover {
 			.header__proyectos__proyecto--1 {
 				img {
-					transition: 1s ease;
-					transform: translateX(50px);
+					transition: 1s linear;
+					transform: translateX(50px) scale(1.1);
 				}
 			}
 			.header__proyectos__proyecto--2 {
 				img {
-					transition: 1s ease;
-					transform: translateX(-100px);
+					transition: 1.3s ease;
+					transform: translateX(-100px) scale(1.2);
 				}
 			}
 			.header__proyectos__proyecto--3 {
 				img {
-					transition: 1s ease;
+					transition: 1.1s ease-in-out;
 					transform: translateX(-70px);
 				}
 			}
@@ -116,9 +116,9 @@ header {
 			img {
 				width: 25rem;
 				height: 15rem;
-				filter: drop-shadow(30px 30px 15px #000);
+				filter: drop-shadow(40px -30px 20px #000);
 			}
-			transform: perspective(800px) rotateY(-45deg);
+
 			cursor: pointer;
 
 			position: relative;
@@ -131,24 +131,23 @@ header {
 			img {
 				width: 8rem;
 				height: 13rem;
-				filter: drop-shadow(30px 30px 15px #000);
+				filter: drop-shadow(40px -30px 20px #000);
 			}
 
 			cursor: pointer;
-
+			width: 5rem;
 			position: relative;
 			top: 0rem;
-			right: -10rem;
+			right: -23rem;
 			z-index: 99999;
-			transform: perspective(800px) rotateY(-45deg);
 		}
 		.header__proyectos__proyecto--3 {
 			img {
 				width: 35rem;
 				height: 25rem;
-				filter: drop-shadow(30px 30px 15px #000);
+				filter: drop-shadow(40px 30px 30px #000);
 			}
-			transform: perspective(800px) rotateY(-45deg);
+
 			cursor: pointer;
 
 			position: relative;

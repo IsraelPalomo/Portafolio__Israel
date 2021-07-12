@@ -1,6 +1,8 @@
 <template>
 	<nav>
-		<img class="nav__logo" src="..\assets\Logotipo__Blog.svg" alt="" />
+		<a href="http://diplodev.com/" target="_blank"
+			><img class="nav__logo" src="..\assets\Logotipo__Blog.svg" alt=""
+		/></a>
 		<div @click="menuDesplegable()" class="nav__icono--menu"></div>
 		<div class="nav__menu--responsive">
 			<a href="#inicio">Inicio <span>|</span></a
