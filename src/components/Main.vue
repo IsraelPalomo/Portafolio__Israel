@@ -4,7 +4,6 @@
 		<div class="sobreMi">
 			<div class="contenedor---img">
 				<div class="sobreMi__img"></div>
-				<button class="sobreMi__btn">Descargar Curriculum</button>
 			</div>
 			<div class="sobreMi__texto">
 				<p>
@@ -44,8 +43,11 @@ main {
 	}
 	.sobreMi {
 		margin-top: 7rem;
+		margin-right: 1rem;
+		margin-left: 1rem;
 		.contenedor---img {
 			margin: 0 auto;
+
 			display: flex;
 			flex-direction: column;
 			justify-content: space-around;
@@ -56,36 +58,36 @@ main {
 				background-position: center;
 				width: 10rem;
 				height: 10rem;
-				box-shadow: (-20px 20px 0 $color-ternario);
+				border: solid 10px $color-oscuro;
+
 				border-radius: 100px;
-				margin: 0 auto 2rem auto;
-			}
-			.sobreMi__btn {
-				background-color: $color-ternario;
-				color: $color-blanco;
-				padding: 2rem;
-				border-radius: 15px;
-				font-family: $tipografia-subtitulos;
-				border: none;
-				max-width: 15rem;
-				margin: 0 auto;
-				display: none;
+				margin: 0 auto -6rem auto;
+				box-shadow: 0 0px 1.8px rgba(0, 0, 0, 0.105), 0 0px 4px rgba(0, 0, 0, 0.155),
+					0 0px 6.7px rgba(0, 0, 0, 0.191), 0 0px 10.2px rgba(0, 0, 0, 0.222),
+					0 0px 14.7px rgba(0, 0, 0, 0.25), 0 0px 20.7px rgba(0, 0, 0, 0.278),
+					0 0px 29.4px rgba(0, 0, 0, 0.309), 0 0px 42.7px rgba(0, 0, 0, 0.345),
+					0 0px 65.8px rgba(0, 0, 0, 0.395), 0 0px 117px rgba(0, 0, 0, 0.5);
 			}
 		}
 
 		.sobreMi__texto {
 			width: auto;
-			height: 17rem;
-			box-shadow: 0 3.1px 2.7px rgba(0, 0, 0, 0.39), 0 7.9px 6.9px rgba(0, 0, 0, 0.396),
-				0 16.1px 14.2px rgba(0, 0, 0, 0.371), 0 33.2px 29.2px rgba(0, 0, 0, 0.334),
-				0 91px 80px rgba(0, 0, 0, 0.29);
-			padding: 2rem;
-			border-radius: 0 0 15px 15px;
+			height: 50%;
+			max-height: 30rem;
+			box-shadow: 0 0px 1.8px rgba(0, 0, 0, 0.105), 0 0px 4px rgba(0, 0, 0, 0.155),
+				0 0px 6.7px rgba(0, 0, 0, 0.191), 0 0px 10.2px rgba(0, 0, 0, 0.222),
+				0 0px 14.7px rgba(0, 0, 0, 0.25), 0 0px 20.7px rgba(0, 0, 0, 0.278),
+				0 0px 29.4px rgba(0, 0, 0, 0.309), 0 0px 42.7px rgba(0, 0, 0, 0.345),
+				0 0px 65.8px rgba(0, 0, 0, 0.395), 0 0px 117px rgba(0, 0, 0, 0.5);
+			padding: 1.5rem;
+			padding-top: 7rem;
+			border-radius: 10px;
 			max-width: 35rem;
-			margin: 0 auto 0 auto;
+			margin: auto auto;
+			background-color: $color-oscuro-2;
 
 			p {
-				text-align: justify;
+				text-align: center;
 				color: $color-principal;
 				font-family: $tipografia-parrafos;
 			}
@@ -101,17 +103,6 @@ main {
 @media (min-width: 900px) {
 }
 @media (min-width: 1200px) {
-	main {
-		.sobreMi {
-			display: flex;
-			justify-content: space-around;
-			.contenedor---img {
-				.sobreMi__btn {
-					display: block;
-				}
-			}
-		}
-	}
 }
 @media (min-width: 2000px) {
 }
