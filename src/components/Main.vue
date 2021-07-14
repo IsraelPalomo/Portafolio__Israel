@@ -15,6 +15,8 @@
 				</p>
 			</div>
 		</div>
+		<img class="separador__portafolio" src="..\assets\triangleAsymmetrical.svg" alt="" />
+		<section class="portafolio"></section>
 	</main>
 </template>
 
@@ -92,6 +94,15 @@ main {
 				font-family: $tipografia-parrafos;
 			}
 		}
+	}
+	.separador__portafolio {
+		transform: rotate(180deg);
+		margin-top: 10rem;
+	}
+	.portafolio {
+		background-color: $color-principal;
+		height: 25rem;
+		width: 100%;
 	}
 }
 //*--------------------------------------------Media Queris---------------------------------------------------------------------------
