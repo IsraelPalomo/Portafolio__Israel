@@ -16,8 +16,8 @@
 			</div>
 		</div>
 		<img class="separador__portafolio" src="..\assets\triangleAsymmetrical.svg" alt="" />
+		<h2 class="portafolio__titulo">Mis Proyectos</h2>
 		<section class="portafolio">
-			<h2 class="portafolio__titulo">Mis Proyectos</h2>
 			<div class="portafolio__proyecto portafolio__proyecto--1">
 				<div class="portafolio__proyecto__img"></div>
 				<div class="portafolio__proyecto__texto">
@@ -74,7 +74,22 @@
 					<button>Ver Codigo</button>
 				</div>
 			</div>
+
 			<div class="portafolio__proyecto portafolio__proyecto--5">
+				<div class="portafolio__proyecto__img"></div>
+				<div class="portafolio__proyecto__texto">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque omnis perspiciatis
+						laboriosam reprehenderit accusamus, architecto autem! Nam error, ipsam tenetur corporis
+						ipsa, obcaecati expedita, at dignissimos quam quibusdam iste saepe?
+					</p>
+				</div>
+				<div class="portafolio__proyecto__btn">
+					<button>Ver Sitio</button>
+					<button>Ver Codigo</button>
+				</div>
+			</div>
+			<div class="portafolio__proyecto portafolio__proyecto--6">
 				<div class="portafolio__proyecto__img"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
@@ -171,36 +186,44 @@ main {
 	.separador__portafolio {
 		transform: rotate(180deg);
 		margin-top: 10rem;
+		margin-bottom: -6rem;
+		z-index: 99;
 	}
 	.separador__portafolio--1 {
 		transform: rotate(180deg);
 		margin-top: 10rem;
 	}
+	.portafolio__titulo {
+		text-align: center;
+		padding: 1rem;
+		background-color: $color-oscuro;
+		position: relative;
+		width: auto;
+		margin: 10rem auto 0 auto;
+		max-width: 15rem;
+		z-index: 999;
+		color: $color-principal;
+		font-family: $tipografia-subtitulos;
+	}
+
 	.portafolio {
 		background-color: $color-principal;
-		height: 210rem;
+		height: 320rem;
 		width: 100%;
-		margin-top: -4px;
+		margin-top: -8.2rem;
 		padding-top: 5rem;
-		.portafolio__titulo {
-			text-align: center;
-			padding: 1rem;
-			background-color: $color-oscuro;
-
-			width: auto;
-			margin: auto;
-			max-width: 15rem;
-
-			color: $color-principal;
-			font-family: $tipografia-subtitulos;
-			margin-bottom: 5rem;
+		display: grid;
+		grid-template-columns: 1fr;
+		align-self: center;
+		.portafolio__proyecto.portafolio__proyecto--1 {
+			margin-top: 10rem;
 		}
 		.portafolio__proyecto {
 			width: 90%;
 			margin: 0 auto;
 			background-color: $color-oscuro;
 			padding-top: 2rem;
-			margin-bottom: 5rem;
+			max-height: 35rem;
 			border-radius: 15px;
 
 			.portafolio__proyecto__img {
@@ -240,6 +263,13 @@ main {
 @media (min-width: 650px) {
 }
 @media (min-width: 900px) {
+	main {
+		.portafolio {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(4, 1fr);
+			height: 140rem;
+		}
+	}
 }
 @media (min-width: 1200px) {
 }
