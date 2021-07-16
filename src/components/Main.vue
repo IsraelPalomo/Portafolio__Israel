@@ -134,7 +134,23 @@
 		<section class="formulario">
 			<div class="formulario__titulo">Contactame...</div>
 			<div class="formulario__contenedor">
-				<form class="formulario__contenedor__form"></form>
+				<form class="formulario__contenedor__form">
+					<label for="name">Nombre:</label>
+					<input type="text" name="name" id="name" required placeholder="Tu nombre" />
+					<label for="email">E-mail:</label>
+					<input type="text" name="email" id="email" required placeholder="Tu Email" />
+					<label for="robot">Eres un robot?</label>
+					<input type="checkbox" name="name" id="name" required />
+					<label for="mensaje">Escribe...</label>
+					<textarea
+						name="mensaje"
+						id="mensaje"
+						cols="30"
+						rows="10"
+						placeholder="Escribe tu mensaje AQUI"
+					></textarea>
+					<button type="submit">Enviar Formulario</button>
+				</form>
 			</div>
 		</section>
 	</main>
@@ -152,6 +168,7 @@ main {
 	height: 100rem;
 	padding-top: 10rem;
 	box-sizing: border-box;
+
 	h2 {
 		text-align: center;
 		padding: 1rem;
@@ -219,12 +236,11 @@ main {
 		transform: rotate(180deg);
 		margin-top: 10rem;
 		margin-bottom: -6rem;
-		z-index: 99;
+		z-index: 9999;
 	}
 	.separador__portafolio--1 {
 		transform: rotate(180deg);
 		margin-top: 10rem;
-		z-index: 99;
 	}
 	.portafolio__titulo {
 		text-align: center;
@@ -241,11 +257,13 @@ main {
 
 	.portafolio {
 		background-color: $color-principal;
+		z-index: 9999;
 		height: 270rem;
 		width: 100%;
 		margin-top: -8.2rem;
 		padding-top: 5rem;
 		display: grid;
+		position: relative;
 		grid-template-columns: 1fr;
 
 		.portafolio__proyecto.portafolio__proyecto--1 {
@@ -332,8 +350,11 @@ main {
 	}
 	.relleno {
 		width: 100%;
-		height: 10rem;
+		height: 35rem;
 		background-color: $color-oscuro;
+		margin-top: -30rem;
+		z-index: 99;
+		position: relative;
 	}
 	.formulario {
 		background-color: $color-oscuro;
@@ -348,6 +369,7 @@ main {
 			z-index: 999;
 			color: $color-principal;
 			font-family: $tipografia-subtitulos;
+			font-size: 1.5rem;
 		}
 		.formulario__contenedor {
 			box-shadow: 0 0px 1.8px rgba(0, 0, 0, 0.105), 0 0px 4px rgba(0, 0, 0, 0.155),
@@ -356,10 +378,32 @@ main {
 				0 0px 29.4px rgba(0, 0, 0, 0.309), 0 0px 42.7px rgba(0, 0, 0, 0.345),
 				0 0px 65.8px rgba(0, 0, 0, 0.395), 0 0px 117px rgba(0, 0, 0, 0.5);
 			width: 85%;
-			height: 25rem;
+			height: auto;
 			background-color: $color-oscuro-2;
 			margin: 0 auto;
 			max-width: 50rem;
+			padding-bottom: 3rem;
+			.formulario__contenedor__form {
+				display: grid;
+				grid-template-columns: 1fr;
+				text-align: center;
+				gap: 1rem;
+				label:first-child {
+					margin-top: 4rem;
+				}
+				input {
+					width: 80%;
+					margin: 0 auto;
+				}
+				button {
+					width: 80%;
+					margin: 0 auto;
+				}
+				textarea {
+					width: 80%;
+					margin: 0 auto;
+				}
+			}
 		}
 	}
 }
