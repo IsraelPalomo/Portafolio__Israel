@@ -1,13 +1,13 @@
 <template>
-	<nav>
+	<nav class="nav" id="inicio">
 		<a href="http://diplodev.com/" target="_blank"
 			><img class="nav__logo" src="..\assets\Logotipo__Blog.svg" alt=""
 		/></a>
 		<div @click="menuDesplegable()" class="nav__icono--menu"></div>
 		<div class="nav__menu--responsive">
-			<a href="#inicio">Inicio <span>|</span></a
-			><a href="#sobreMi">Sobre Mi <span>|</span></a
-			><a href="#habilidades">Habilidades <span>|</span></a
+			<a href="#inicio">Inicio <span>|</span></a>
+			<a href="#sobreMi">SobreMi<span>|</span></a
+			><a href="#proyectos">Proyectos <span>|</span></a
 			><a href="#contacto">Contacto <span>|</span></a
 			><a href="#sociales">Sociales <span>|</span></a>
 		</div>
@@ -16,7 +16,7 @@
 		<div class="menu__enlaces">
 			<a href="#inicio" @click="menuDesplegable()">Inicio</a
 			><a href="#sobreMi" @click="menuDesplegable()">Sobre Mi</a
-			><a href="#habilidades" @click="menuDesplegable()">Habilidades</a
+			><a href="#proyectos" @click="menuDesplegable()">Proyectos</a
 			><a href="#contacto" @click="menuDesplegable()">Contacto</a
 			><a href="#sociales" @click="menuDesplegable()">Sociales</a>
 		</div>
@@ -27,7 +27,7 @@
 export default {
 	methods: {
 		menuDesplegable() {
-			const body = document.getElementsByTagName("body")[0];
+			const body = document.querySelector(".nav");
 			const iconoMenu = document.querySelector(".nav__icono--menu");
 			const menu = document.querySelector(".menu--desplegable");
 			menu.classList.toggle("ampliar");
@@ -53,8 +53,7 @@ nav {
 		0 41.8px 33.4px rgba(0, 0, 0, 0.182), 0 100px 80px rgba(0, 0, 0, 0.16);
 	height: 6rem;
 	width: 100%;
-	position: sticky;
-	top: 0;
+	position: fixed;
 
 	z-index: 999999;
 	.nav__logo {
@@ -109,7 +108,7 @@ nav {
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: 4rem;
-		margin-top: -6rem;
+		margin-top: 6rem;
 		text-align: center;
 		a {
 			text-decoration: none;

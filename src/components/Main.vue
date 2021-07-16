@@ -1,6 +1,6 @@
 <template>
 	<main>
-		<h2>Sobre Mi</h2>
+		<h2 id="sobreMi">Sobre Mi</h2>
 		<div class="sobreMi">
 			<div class="contenedor---img">
 				<div class="sobreMi__img"></div>
@@ -15,96 +15,128 @@
 				</p>
 			</div>
 		</div>
-		<img class="separador__portafolio" src="..\assets\triangleAsymmetrical.svg" alt="" />
+		<img
+			class="separador__portafolio"
+			id="proyectos"
+			src="..\assets\triangleAsymmetrical.svg"
+			alt=""
+		/>
 		<h2 class="portafolio__titulo">Mis Proyectos</h2>
 		<section class="portafolio">
 			<div class="portafolio__proyecto portafolio__proyecto--1">
-				<div class="portafolio__proyecto__img"></div>
+				<div class="portafolio__proyecto__img portafolio__proyecto__img--1"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque omnis perspiciatis
-						laboriosam reprehenderit accusamus, architecto autem! Nam error, ipsam tenetur corporis
-						ipsa, obcaecati expedita, at dignissimos quam quibusdam iste saepe?
+						Proyecto de pagina web para ventas de casas y solares , buen proyecto para iniciarse en
+						el mundo del desarrollo web. Algunas de las tecnolagias usadas son Html, Css
+						(Principalmente).
 					</p>
 				</div>
 				<div class="portafolio__proyecto__btn">
-					<button>Ver Sitio</button>
+					<a href="https://venta-de-casas-y-pisos.netlify.app" target="_blank"
+						><button>Ver Sitio</button></a
+					>
 					<button>Ver Codigo</button>
 				</div>
 			</div>
 			<div class="portafolio__proyecto portafolio__proyecto--2">
-				<div class="portafolio__proyecto__img"></div>
+				<div class="portafolio__proyecto__img portafolio__proyecto__img--2"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque omnis perspiciatis
-						laboriosam reprehenderit accusamus, architecto autem! Nam error, ipsam tenetur corporis
-						ipsa, obcaecati expedita, at dignissimos quam quibusdam iste saepe?
+						Proyecto construido con Vue.js y con Firibase , buen proyecto para practicar bases de
+						datos y inicio de sesion con Firebase y todo los relacionado con Vue. Ademas hemos
+						incluido Vuetify para los estilos.
 					</p>
 				</div>
 				<div class="portafolio__proyecto__btn">
-					<button>Ver Sitio</button>
-					<button>Ver Codigo</button>
+					<a href="https://auth-google-facebook.netlify.app" target="_blank"
+						><button>Ver Sitio</button></a
+					>
+					<a href="https://github.com/IsraelPalomo/auth-google-facebook" target="_blank"
+						><button>Ver Codigo</button></a
+					>
 				</div>
 			</div>
 			<div class="portafolio__proyecto portafolio__proyecto--3">
-				<div class="portafolio__proyecto__img"></div>
+				<div class="portafolio__proyecto__img portafolio__proyecto__img--3"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque omnis perspiciatis
-						laboriosam reprehenderit accusamus, architecto autem! Nam error, ipsam tenetur corporis
-						ipsa, obcaecati expedita, at dignissimos quam quibusdam iste saepe?
+						Proyecto de Ajedrez para practicar jugadas y aperturas , marcandote las amezas
+						potenciales en la posicion addemas de poder cambiar entre las piezas y resetear el
+						tablero. Buen proyecto para practicar la integracion de librerias esternas en Vue.js
 					</p>
 				</div>
 				<div class="portafolio__proyecto__btn">
-					<button>Ver Sitio</button>
-					<button>Ver Codigo</button>
+					<a href="https://app-ajedrez-israel.netlify.app" target="_blank"
+						><button>Ver Sitio</button></a
+					>
+					<a href="https://github.com/IsraelPalomo/App__Ajedrez" target="_blank"
+						><button>Ver Codigo</button></a
+					>
 				</div>
 			</div>
 			<div class="portafolio__proyecto portafolio__proyecto--4">
-				<div class="portafolio__proyecto__img"></div>
+				<div class="portafolio__proyecto__img portafolio__proyecto__img--4"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque omnis perspiciatis
-						laboriosam reprehenderit accusamus, architecto autem! Nam error, ipsam tenetur corporis
-						ipsa, obcaecati expedita, at dignissimos quam quibusdam iste saepe?
+						LadingPage de un Hotel, construido con Html, Css y JavaScripts. Ademas de otras
+						tecnologias con Webpack y Sass, buen proyecto para practicar la ceacion desde 0 con
+						Webpack. Y para practicar la configuracion inicial de Webpack.
 					</p>
 				</div>
 				<div class="portafolio__proyecto__btn">
-					<button>Ver Sitio</button>
-					<button>Ver Codigo</button>
+					<a href="https://hotel-philidor.netlify.app" target="_blank"
+						><button>Ver Sitio</button></a
+					>
+					<a href="https://github.com/IsraelPalomo/Hotel--Philidor" target="_blank"
+						><button>Ver Codigo</button></a
+					>
 				</div>
 			</div>
 
 			<div class="portafolio__proyecto portafolio__proyecto--5">
-				<div class="portafolio__proyecto__img"></div>
+				<div class="portafolio__proyecto__img portafolio__proyecto__img--5"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque omnis perspiciatis
-						laboriosam reprehenderit accusamus, architecto autem! Nam error, ipsam tenetur corporis
-						ipsa, obcaecati expedita, at dignissimos quam quibusdam iste saepe?
+						Aplicacion de clima en distintas zonas. Pudiendo mirar desde Paises y ciudades hasta
+						pueblos, buen proyecto para practicar como consumir un API REST.
 					</p>
 				</div>
 				<div class="portafolio__proyecto__btn">
-					<button>Ver Sitio</button>
-					<button>Ver Codigo</button>
+					<a href="https://app-tiempo-israel.netlify.app" target="_blank"
+						><button>Ver Sitio</button></a
+					>
+					<a href="https://github.com/IsraelPalomo/APP__TIEMPO" target="_blank"
+						><button>Ver Codigo</button></a
+					>
 				</div>
 			</div>
 			<div class="portafolio__proyecto portafolio__proyecto--6">
-				<div class="portafolio__proyecto__img"></div>
+				<div class="portafolio__proyecto__img portafolio__proyecto__img--6"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque omnis perspiciatis
-						laboriosam reprehenderit accusamus, architecto autem! Nam error, ipsam tenetur corporis
-						ipsa, obcaecati expedita, at dignissimos quam quibusdam iste saepe?
+						Aplicacion Web que consume una API externa y nos muestra los paises por poblacion. Buen
+						proyecto para practicar estilos y como consumir una API.
 					</p>
 				</div>
 				<div class="portafolio__proyecto__btn">
-					<button>Ver Sitio</button>
-					<button>Ver Codigo</button>
+					<a href="https://buscador-paises.netlify.app" target="_blank"
+						><button>Ver Sitio</button></a
+					>
+					<a href="https://github.com/IsraelPalomo/Bucador-Paises" target="_blank"
+						><button>Ver Codigo</button></a
+					>
 				</div>
 			</div>
 		</section>
 		<img class="separador__portafolio--2" src="..\assets\triangleAsymmetrical.svg" alt="" />
+		<div class="relleno"></div>
+		<section class="formulario">
+			<div class="formulario__titulo">Contactame...</div>
+			<div class="formulario__contenedor">
+				<form class="formulario__contenedor__form"></form>
+			</div>
+		</section>
 	</main>
 </template>
 
@@ -192,6 +224,7 @@ main {
 	.separador__portafolio--1 {
 		transform: rotate(180deg);
 		margin-top: 10rem;
+		z-index: 99;
 	}
 	.portafolio__titulo {
 		text-align: center;
@@ -208,31 +241,59 @@ main {
 
 	.portafolio {
 		background-color: $color-principal;
-		height: 320rem;
+		height: 270rem;
 		width: 100%;
 		margin-top: -8.2rem;
 		padding-top: 5rem;
 		display: grid;
 		grid-template-columns: 1fr;
-		align-self: center;
+
 		.portafolio__proyecto.portafolio__proyecto--1 {
 			margin-top: 10rem;
 		}
+
 		.portafolio__proyecto {
 			width: 90%;
 			margin: 0 auto;
 			background-color: $color-oscuro;
 			padding-top: 2rem;
-			max-height: 35rem;
+			max-height: 33rem;
 			border-radius: 15px;
+			max-width: 30rem;
 
 			.portafolio__proyecto__img {
 				width: 80%;
 				height: 15rem;
 				margin: 0 auto;
-
+			}
+			.portafolio__proyecto__img--1 {
 				background-image: url("../assets/proyecto1.png");
 				background-position: left;
+				background-size: cover;
+			}
+			.portafolio__proyecto__img--2 {
+				background-image: url("../assets/proyecto2.png");
+				background-position: center;
+				background-size: cover;
+			}
+			.portafolio__proyecto__img--3 {
+				background-image: url("../assets/proyecto3.png");
+				background-position: left;
+				background-size: cover;
+			}
+			.portafolio__proyecto__img--4 {
+				background-image: url("../assets/proyecto4.png");
+				background-position: center;
+				background-size: cover;
+			}
+			.portafolio__proyecto__img--5 {
+				background-image: url("../assets/proyecto5.png");
+				background-position: center;
+				background-size: cover;
+			}
+			.portafolio__proyecto__img--6 {
+				background-image: url("../assets/proyecto6.png");
+				background-position: center;
 				background-size: cover;
 			}
 			.portafolio__proyecto__texto {
@@ -251,8 +312,54 @@ main {
 				justify-content: space-around;
 				button {
 					margin: 2rem 2rem;
+					padding: 0.5rem;
+					border: none;
+					background-color: $color-principal;
+					font-family: $tipografia-subtitulos;
+					font-weight: 700;
+					font-size: 1rem;
+					border-radius: 5px;
+					&:hover {
+						transform: scale(1.1);
+						transition: 0.5s;
+						cursor: pointer;
+
+						background-color: #218b7f;
+					}
 				}
 			}
+		}
+	}
+	.relleno {
+		width: 100%;
+		height: 10rem;
+		background-color: $color-oscuro;
+	}
+	.formulario {
+		background-color: $color-oscuro;
+		.formulario__titulo {
+			text-align: center;
+			padding: 1rem;
+			background-color: $color-oscuro;
+			position: relative;
+			width: auto;
+			margin: 0 auto;
+			max-width: 15rem;
+			z-index: 999;
+			color: $color-principal;
+			font-family: $tipografia-subtitulos;
+		}
+		.formulario__contenedor {
+			box-shadow: 0 0px 1.8px rgba(0, 0, 0, 0.105), 0 0px 4px rgba(0, 0, 0, 0.155),
+				0 0px 6.7px rgba(0, 0, 0, 0.191), 0 0px 10.2px rgba(0, 0, 0, 0.222),
+				0 0px 14.7px rgba(0, 0, 0, 0.25), 0 0px 20.7px rgba(0, 0, 0, 0.278),
+				0 0px 29.4px rgba(0, 0, 0, 0.309), 0 0px 42.7px rgba(0, 0, 0, 0.345),
+				0 0px 65.8px rgba(0, 0, 0, 0.395), 0 0px 117px rgba(0, 0, 0, 0.5);
+			width: 85%;
+			height: 25rem;
+			background-color: $color-oscuro-2;
+			margin: 0 auto;
+			max-width: 50rem;
 		}
 	}
 }
@@ -268,6 +375,21 @@ main {
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(4, 1fr);
 			height: 140rem;
+			.portafolio__proyecto.portafolio__proyecto--2 {
+				margin-top: 10rem;
+			}
+			.portafolio__proyecto.portafolio__proyecto--3 {
+				margin-top: 10rem;
+			}
+			.portafolio__proyecto.portafolio__proyecto--4 {
+				margin-top: 10rem;
+			}
+			.portafolio__proyecto.portafolio__proyecto--5 {
+				margin-top: 10rem;
+			}
+			.portafolio__proyecto.portafolio__proyecto--6 {
+				margin-top: 10rem;
+			}
 		}
 	}
 }

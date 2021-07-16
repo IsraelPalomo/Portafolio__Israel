@@ -46,10 +46,12 @@ header {
 	grid-template-rows: repeat(2, 1fr);
 	text-align: center;
 	align-items: center;
+	padding-top: 6rem;
 	h1 {
 		color: $color-blanco;
 		font-family: $tipografia-titulos;
 		padding: 1em;
+
 		backdrop-filter: blur(4px);
 		-webkit--filter: blur(5px);
 		border: 2px solid $color-blanco;
@@ -62,7 +64,7 @@ header {
 		color: $color-oscuro;
 		font-family: $tipografia-subtitulos;
 		width: 80%;
-		margin: -4rem auto 0 auto;
+		margin: -6rem auto 0 auto;
 		padding: 1rem;
 		background-color: $color-principal;
 		border-radius: 15px;
