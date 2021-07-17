@@ -1,5 +1,5 @@
 <template>
-	<header>
+	<header id="inicio">
 		<h1>Israel Palomo España</h1>
 		<h2 class="animate__animated animate__flipInX">
 			Desarrollador Y <br />

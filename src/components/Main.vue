@@ -250,7 +250,7 @@ main {
 		width: auto;
 		margin: 10rem auto 0 auto;
 		max-width: 15rem;
-		z-index: 999;
+		z-index: 99999;
 		color: $color-principal;
 		font-family: $tipografia-subtitulos;
 	}

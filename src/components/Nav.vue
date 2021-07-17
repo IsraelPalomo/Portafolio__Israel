@@ -1,5 +1,5 @@
 <template>
-	<nav class="nav" id="inicio">
+	<nav class="nav">
 		<a href="http://diplodev.com/" target="_blank"
 			><img class="nav__logo" src="..\assets\Logotipo__Blog.svg" alt=""
 		/></a>
