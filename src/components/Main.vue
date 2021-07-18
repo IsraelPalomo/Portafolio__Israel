@@ -39,6 +39,7 @@
 					<button>Ver Codigo</button>
 				</div>
 			</div>
+
 			<div class="portafolio__proyecto portafolio__proyecto--2">
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--2"></div>
 				<div class="portafolio__proyecto__texto">
@@ -135,13 +136,17 @@
 			<div class="formulario__titulo">Contactame...</div>
 			<div class="formulario__contenedor">
 				<form class="formulario__contenedor__form">
-					<label for="name">Nombre:</label>
-					<input type="text" name="name" id="name" required placeholder="Tu nombre" />
-					<label for="email">E-mail:</label>
-					<input type="text" name="email" id="email" required placeholder="Tu Email" />
-					<label for="robot">Eres un robot?</label>
-					<input type="checkbox" name="name" id="name" required />
-					<label for="mensaje">Escribe...</label>
+					<div class="parte1__form">
+						<h3>Nombre</h3>
+
+						<input type="text" name="name" id="name" required placeholder="Tu nombre" />
+						<h3>Email</h3>
+
+						<input type="text" name="email" id="email" required placeholder="Tu Email" />
+					</div>
+
+					<h3>Mensaje</h3>
+
 					<textarea
 						name="mensaje"
 						id="mensaje"
@@ -384,13 +389,27 @@ main {
 			max-width: 50rem;
 			padding-bottom: 3rem;
 			.formulario__contenedor__form {
+				.parte1__form {
+					display: flex;
+					flex-wrap: wrap;
+					input {
+						width: 50%;
+					}
+				}
 				display: grid;
 				grid-template-columns: 1fr;
 				text-align: center;
 				gap: 1rem;
-				label:first-child {
-					margin-top: 4rem;
+				h3 {
+					text-align: center;
+					width: 100%;
+					margin-bottom: 2rem;
+					margin-top: 2rem;
+					font-family: $tipografia-subtitulos;
+					color: $color-principal;
+					font-size: 0.9rem;
 				}
+
 				input {
 					width: 80%;
 					margin: 0 auto;
