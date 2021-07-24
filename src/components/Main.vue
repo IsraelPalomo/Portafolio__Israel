@@ -64,7 +64,7 @@
 					<p>
 						Proyecto de Ajedrez para practicar jugadas y aperturas , marcandote las amezas
 						potenciales en la posicion addemas de poder cambiar entre las piezas y resetear el
-						tablero. Buen proyecto para practicar la integracion de librerias esternas en Vue.js
+						tablero.
 					</p>
 				</div>
 				<div class="portafolio__proyecto__btn">
@@ -82,7 +82,7 @@
 					<p>
 						LadingPage de un Hotel, construido con Html, Css y JavaScripts. Ademas de otras
 						tecnologias con Webpack y Sass, buen proyecto para practicar la ceacion desde 0 con
-						Webpack. Y para practicar la configuracion inicial de Webpack.
+						Webpack.
 					</p>
 				</div>
 				<div class="portafolio__proyecto__btn">
@@ -152,7 +152,7 @@
 						id="mensaje"
 						cols="30"
 						rows="10"
-						placeholder="Escribe tu mensaje AQUI"
+						placeholder="Escribe AQUI..."
 					></textarea>
 					<button type="submit">Enviar Formulario</button>
 				</form>
@@ -283,6 +283,7 @@ main {
 			max-height: 33rem;
 			border-radius: 15px;
 			max-width: 30rem;
+			min-width: 15rem;
 
 			.portafolio__proyecto__img {
 				width: 80%;
@@ -412,15 +413,40 @@ main {
 
 				input {
 					width: 80%;
-					margin: 0 auto;
+					margin: 0 auto 2rem auto;
+					border: none;
+					border-bottom: 2px solid white;
+					background-color: $color-oscuro-2;
+					color: white;
 				}
 				button {
 					width: 80%;
-					margin: 0 auto;
+					margin: 5rem auto 0 auto;
+
+					padding: 0.5rem;
+					border: none;
+					background-color: $color-principal;
+					font-family: $tipografia-subtitulos;
+					font-weight: 700;
+					font-size: 1rem;
+					border-radius: 5px;
+					max-width: 15rem;
+					&:hover {
+						transform: scale(1.1);
+						transition: 0.5s;
+						cursor: pointer;
+
+						background-color: #218b7f;
+					}
 				}
 				textarea {
 					width: 80%;
 					margin: 0 auto;
+
+					border: 2px solid white;
+					background-color: $color-oscuro-2;
+					color: white;
+					padding: 0.5rem;
 				}
 			}
 		}
