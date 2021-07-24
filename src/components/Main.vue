@@ -393,9 +393,6 @@ main {
 				.parte1__form {
 					display: flex;
 					flex-wrap: wrap;
-					input {
-						width: 50%;
-					}
 				}
 				display: grid;
 				grid-template-columns: 1fr;
@@ -413,11 +410,13 @@ main {
 
 				input {
 					width: 80%;
+					max-width: 20rem;
 					margin: 0 auto 2rem auto;
 					border: none;
 					border-bottom: 2px solid white;
 					background-color: $color-oscuro-2;
 					color: white;
+					text-align: center;
 				}
 				button {
 					width: 80%;
