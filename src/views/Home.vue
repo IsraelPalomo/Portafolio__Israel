@@ -3,6 +3,7 @@
 		<Nav />
 		<Header />
 		<Main />
+		<Footer />
 	</div>
 </template>
 
@@ -12,6 +13,7 @@
 import Nav from "../components/Nav.vue";
 import Header from "../components/Header.vue";
 import Main from "../components/Main.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
 	name: "Home",
@@ -19,6 +21,7 @@ export default {
 		Nav,
 		Header,
 		Main,
+		Footer,
 	},
 };
 </script>

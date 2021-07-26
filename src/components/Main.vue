@@ -135,7 +135,7 @@
 		<section class="formulario">
 			<div class="formulario__titulo">Contactame...</div>
 			<div class="formulario__contenedor">
-				<form class="formulario__contenedor__form" netlify>
+				<form class="formulario__contenedor__form" data-netlify="true">
 					<div class="parte1__form">
 						<h3>Nombre</h3>
 
@@ -159,7 +159,6 @@
 			</div>
 		</section>
 	</main>
-	<div class="footer"></div>
 </template>
 
 <script>
@@ -363,7 +362,9 @@ main {
 	}
 	.formulario {
 		background-color: $color-oscuro;
-		height: 60rem;
+		height: 70rem;
+		margin-bottom: 10rem;
+		margin-top: 5rem;
 
 		.formulario__titulo {
 			text-align: center;
@@ -389,7 +390,8 @@ main {
 			background-color: $color-oscuro-2;
 			margin: 0 auto;
 			max-width: 50rem;
-			padding-bottom: 3rem;
+			padding-bottom: 5rem;
+
 			.formulario__contenedor__form {
 				.parte1__form {
 					display: flex;
@@ -453,11 +455,7 @@ main {
 		}
 	}
 }
-.footer {
-	height: 15rem;
-	background: red;
-	width: 100%;
-}
+
 //*--------------------------------------------Media Queris---------------------------------------------------------------------------
 
 @media (min-width: 450px) {
