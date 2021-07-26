@@ -159,6 +159,7 @@
 			</div>
 		</section>
 	</main>
+	<div class="footer"></div>
 </template>
 
 <script>
@@ -170,9 +171,8 @@ export default {};
 main {
 	background-color: $color-oscuro;
 	width: 100%;
-	height: 100rem;
+
 	padding-top: 10rem;
-	box-sizing: border-box;
 
 	h2 {
 		text-align: center;
@@ -360,19 +360,20 @@ main {
 		background-color: $color-oscuro;
 		margin-top: -30rem;
 		z-index: 99;
-		position: relative;
 	}
 	.formulario {
 		background-color: $color-oscuro;
+		height: 60rem;
+
 		.formulario__titulo {
 			text-align: center;
 			padding: 1rem;
 			background-color: $color-oscuro;
-			position: relative;
+
 			width: auto;
 			margin: 0 auto;
 			max-width: 15rem;
-			z-index: 999;
+
 			color: $color-principal;
 			font-family: $tipografia-subtitulos;
 			font-size: 1.5rem;
@@ -417,6 +418,7 @@ main {
 					background-color: $color-oscuro-2;
 					color: white;
 					text-align: center;
+					padding: 1rem;
 				}
 				button {
 					width: 80%;
@@ -450,6 +452,11 @@ main {
 			}
 		}
 	}
+}
+.footer {
+	height: 15rem;
+	background: red;
+	width: 100%;
 }
 //*--------------------------------------------Media Queris---------------------------------------------------------------------------
 
