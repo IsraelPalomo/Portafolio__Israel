@@ -135,13 +135,7 @@
 		<section class="formulario">
 			<div class="formulario__titulo">Contactame...</div>
 			<div class="formulario__contenedor">
-				<form
-					class="formulario__contenedor__form"
-					data-netlify="true"
-					id="contacto"
-					name="contact"
-					method="POST"
-				>
+				<form class="formulario__contenedor__form" name="contact" netifly>
 					<div class="parte1__form">
 						<h3>Nombre</h3>
 
