@@ -135,7 +135,13 @@
 		<section class="formulario">
 			<div class="formulario__titulo">Contactame...</div>
 			<div class="formulario__contenedor">
-				<form class="formulario__contenedor__form" data-netlify="true">
+				<form
+					class="formulario__contenedor__form"
+					netlify
+					id="contacto"
+					name="contact"
+					method="POST"
+				>
 					<div class="parte1__form">
 						<h3>Nombre</h3>
 
@@ -254,7 +260,7 @@ main {
 		width: auto;
 		margin: 10rem auto 0 auto;
 		max-width: 15rem;
-		z-index: 99999;
+		z-index: 9999;
 		color: $color-principal;
 		font-family: $tipografia-subtitulos;
 	}

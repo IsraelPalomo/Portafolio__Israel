@@ -1,5 +1,5 @@
 <template>
-	<footer>
+	<footer id="sociales">
 		<h2>Israel Palomo</h2>
 		<p>Desarrollador y programador web</p>
 		<hr />
