@@ -137,7 +137,7 @@
 			<div class="formulario__contenedor">
 				<form
 					class="formulario__contenedor__form"
-					netlify
+					data-netlify="true"
 					id="contacto"
 					name="contact"
 					method="POST"
