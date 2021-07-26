@@ -135,7 +135,7 @@
 		<section class="formulario">
 			<div class="formulario__titulo">Contactame...</div>
 			<div class="formulario__contenedor">
-				<form class="formulario__contenedor__form">
+				<form class="formulario__contenedor__form" netlify>
 					<div class="parte1__form">
 						<h3>Nombre</h3>
 
