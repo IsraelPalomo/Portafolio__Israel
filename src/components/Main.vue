@@ -137,10 +137,10 @@
 			<div class="formulario__contenedor">
 				<form
 					class="formulario__contenedor__form"
-					method="POST"
 					id="contacto"
 					name="contact"
-					netlify
+					method="POST"
+					data-netlify="true"
 				>
 					<div class="parte1__form">
 						<h3>Nombre</h3>
