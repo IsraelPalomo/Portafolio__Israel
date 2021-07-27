@@ -138,17 +138,18 @@
 				<form
 					class="formulario__contenedor__form"
 					id="contacto"
-					name="contact"
 					method="POST"
-					data-netlify="true"
+					name="contact"
+					netlify
+					netlify-honeypot="bot-field"
 				>
 					<div class="parte1__form">
 						<h3>Nombre</h3>
 
-						<input type="text" name="name" id="name" required placeholder="Tu nombre" />
+						<input type="text" name="nombre" id="name" required placeholder="Tu nombre" />
 						<h3>Email</h3>
 
-						<input type="text" name="email" id="email" required placeholder="Tu Email" />
+						<input type="text" name="correo" id="email" required placeholder="Tu Email" />
 					</div>
 
 					<h3>Mensaje</h3>
