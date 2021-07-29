@@ -138,10 +138,11 @@
 				<form
 					class="formulario__contenedor__form"
 					id="contacto"
-					method="post"
-					name="formulario-simple"
-					action="enviar.php"
+					name="contact"
+					method="POST"
+					data-netlify="true"
 				>
+					<input type="hidden" name="form-name" value="name_of_my_form" />
 					<div class="parte1__form">
 						<h3>Nombre</h3>
 
