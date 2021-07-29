@@ -55,7 +55,7 @@ nav {
 	width: 100%;
 	position: fixed;
 
-	z-index: 999999;
+	z-index: 9999999;
 	.nav__logo {
 		height: 5rem;
 		width: auto;
@@ -102,7 +102,7 @@ nav {
 	justify-content: center;
 	align-items: center;
 	position: fixed;
-	z-index: 99999;
+	z-index: 999999;
 
 	.menu__enlaces {
 		display: grid;
