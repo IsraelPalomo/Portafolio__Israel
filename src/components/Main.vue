@@ -140,8 +140,7 @@
 					id="contacto"
 					method="post"
 					name="formulario-simple"
-					data-netlify="true"
-					hidden
+					action="enviar.php"
 				>
 					<div class="parte1__form">
 						<h3>Nombre</h3>
