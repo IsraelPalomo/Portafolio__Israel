@@ -129,7 +129,9 @@
 					>
 				</div>
 			</div>
-			<button class="curriculum">Descargar Curriculum</button>
+			<button class="curriculum">
+				Descargar Curriculum <i class="icono-curriculum fas fa-file-download"></i>
+			</button>
 		</section>
 		<img class="separador__portafolio--2" src="..\assets\triangleAsymmetrical.svg" alt="" />
 		<div class="relleno"></div>
@@ -277,8 +279,32 @@ main {
 		display: grid;
 		position: relative;
 		grid-template-columns: 1fr;
+
 		.curriculum {
-			width: 10rem;
+			width: 17rem;
+			height: 7rem;
+			color: $color-blanco;
+			font-family: $tipografia-subtitulos;
+			font-weight: 900;
+			border-radius: 25px;
+			border: none;
+			background-color: $color-oscuro;
+			letter-spacing: 4px;
+			padding: 2rem;
+			margin: 7rem auto 0 auto;
+			cursor: pointer;
+
+			&:hover {
+				transform: scale(1.1);
+				transition: 0.5s ease;
+				box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.16), 0 6.7px 5.3px rgba(0, 0, 0, 0.23),
+					0 12.5px 10px rgba(0, 0, 0, 0.285), 0 22.3px 17.9px rgba(0, 0, 0, 0.34),
+					0 41.8px 33.4px rgba(0, 0, 0, 0.41), 0 100px 80px rgba(0, 0, 0, 0.57);
+			}
+		}
+		.icono-curriculum {
+			font-size: 1.3rem;
+			margin-top: 1rem;
 		}
 
 		.portafolio__proyecto.portafolio__proyecto--1 {
@@ -481,6 +507,9 @@ main {
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(4, 1fr);
 			height: 140rem;
+			.curriculum {
+				grid-column: 1/3;
+			}
 			.portafolio__proyecto.portafolio__proyecto--2 {
 				margin-top: 10rem;
 			}
