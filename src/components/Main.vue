@@ -129,6 +129,7 @@
 					>
 				</div>
 			</div>
+			<button class="curriculum">Descargar Curriculum</button>
 		</section>
 		<img class="separador__portafolio--2" src="..\assets\triangleAsymmetrical.svg" alt="" />
 		<div class="relleno"></div>
@@ -144,15 +145,15 @@
 				>
 					<input type="hidden" name="form-name" value="name_of_my_form" />
 					<div class="parte1__form">
-						<h3>Nombre</h3>
+						<h3>NOMBRE</h3>
 
 						<input type="text" name="nombre" id="name" required placeholder="Tu nombre" />
-						<h3>Email</h3>
+						<h3>EMAIL</h3>
 
 						<input type="text" name="correo" id="email" required placeholder="Tu Email" />
 					</div>
 
-					<h3>Mensaje</h3>
+					<h3>MENSAJE</h3>
 
 					<textarea
 						name="mensaje"
@@ -276,6 +277,9 @@ main {
 		display: grid;
 		position: relative;
 		grid-template-columns: 1fr;
+		.curriculum {
+			width: 10rem;
+		}
 
 		.portafolio__proyecto.portafolio__proyecto--1 {
 			margin-top: 10rem;
@@ -408,6 +412,8 @@ main {
 				grid-template-columns: 1fr;
 				text-align: center;
 				gap: 1rem;
+				padding: 2rem;
+				padding-top: 3rem;
 				h3 {
 					text-align: center;
 					width: 100%;
@@ -415,7 +421,7 @@ main {
 					margin-top: 2rem;
 					font-family: $tipografia-subtitulos;
 					color: $color-principal;
-					font-size: 0.9rem;
+					font-size: 1rem;
 				}
 
 				input {

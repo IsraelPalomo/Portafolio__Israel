@@ -87,9 +87,13 @@ nav {
 			font-weight: 600;
 			letter-spacing: 3px;
 			font-family: $tipografia-subtitulos;
+			&:hover {
+				color: $color-principal;
+			}
 		}
 	}
 }
+
 .menu--desplegable {
 	width: 100%;
 	height: 100vh;
