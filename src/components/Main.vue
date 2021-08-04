@@ -129,8 +129,11 @@
 					>
 				</div>
 			</div>
+
 			<button class="curriculum">
-				Descargar Curriculum <i class="icono-curriculum fas fa-file-download"></i>
+				<a href="#" download="CurrículumIsrael.docx">
+					Descargar Curriculum <i class="icono-curriculum fas fa-file-download"></i>
+				</a>
 			</button>
 		</section>
 		<img class="separador__portafolio--2" src="..\assets\triangleAsymmetrical.svg" alt="" />
@@ -283,9 +286,7 @@ main {
 		.curriculum {
 			width: 17rem;
 			height: 7rem;
-			color: $color-blanco;
-			font-family: $tipografia-subtitulos;
-			font-weight: 900;
+
 			border-radius: 25px;
 			border: none;
 			background-color: $color-oscuro;
@@ -293,6 +294,12 @@ main {
 			padding: 2rem;
 			margin: 7rem auto 0 auto;
 			cursor: pointer;
+			a {
+				text-decoration: none;
+				color: $color-blanco;
+				font-family: $tipografia-subtitulos;
+				font-weight: 900;
+			}
 
 			&:hover {
 				transform: scale(1.1);
