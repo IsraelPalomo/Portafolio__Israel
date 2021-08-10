@@ -67,7 +67,7 @@ header {
 		margin: -6rem auto 0 auto;
 		padding: 1rem;
 		background-color: $color-principal;
-		border-radius: 15px;
+
 		max-width: 600px;
 		letter-spacing: 1.5px;
 	}

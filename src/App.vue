@@ -16,4 +16,7 @@
 html {
 	box-shadow: border-box;
 }
+p {
+	font-size: 1.2rem;
+}
 </style>

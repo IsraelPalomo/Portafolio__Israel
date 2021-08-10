@@ -131,7 +131,7 @@
 			</div>
 
 			<button class="curriculum">
-				<a href="#" download="CurrículumIsrael.docx">
+				<a href="1.docx" download>
 					Descargar Curriculum <i class="icono-curriculum fas fa-file-download"></i>
 				</a>
 			</button>
@@ -158,17 +158,15 @@
 						<input type="text" name="correo" id="email" required placeholder="Tu Email" />
 					</div>
 
-					<h3>MENSAJE</h3>
-
 					<textarea
 						name="mensaje"
 						id="mensaje"
-						cols="30"
+						cols="10"
 						rows="10"
-						placeholder="Escribe AQUI..."
+						placeholder="Escribe tu mensaje..."
 					></textarea>
-					<button type="submit">Enviar Formulario</button>
 				</form>
+				<button class="btn-form" type="submit">Enviar Formulario</button>
 			</div>
 		</section>
 	</main>
@@ -237,7 +235,7 @@ main {
 				0 0px 65.8px rgba(0, 0, 0, 0.395), 0 0px 117px rgba(0, 0, 0, 0.5);
 			padding: 1.5rem;
 			padding-top: 7rem;
-			border-radius: 10px;
+
 			max-width: 35rem;
 			margin: auto auto;
 			background-color: $color-oscuro-2;
@@ -246,6 +244,7 @@ main {
 				text-align: center;
 				color: $color-principal;
 				font-family: $tipografia-parrafos;
+				font-size: 1.2rem;
 			}
 		}
 	}
@@ -275,25 +274,29 @@ main {
 	.portafolio {
 		background-color: $color-principal;
 		z-index: 9999;
-		height: 270rem;
+		height: auto;
 		width: 100%;
 		margin-top: -8.2rem;
 		padding-top: 5rem;
 		display: grid;
 		position: relative;
 		grid-template-columns: 1fr;
+		max-height: 350rem;
+		justify-content: center;
+		align-items: center;
 
 		.curriculum {
 			width: 17rem;
 			height: 7rem;
 
-			border-radius: 25px;
 			border: none;
 			background-color: $color-oscuro;
 			letter-spacing: 4px;
 			padding: 2rem;
-			margin: 7rem auto 0 auto;
+			margin: 0 auto 5rem auto;
 			cursor: pointer;
+			border: solid 2px $color-blanco;
+
 			a {
 				text-decoration: none;
 				color: $color-blanco;
@@ -322,15 +325,16 @@ main {
 			width: 90%;
 			margin: 0 auto;
 			background-color: $color-oscuro;
-			padding-top: 2rem;
-			max-height: 33rem;
-			border-radius: 15px;
+
 			max-width: 30rem;
 			min-width: 15rem;
+			box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.16), 0 6.7px 5.3px rgba(0, 0, 0, 0.23),
+				0 12.5px 10px rgba(0, 0, 0, 0.285), 0 22.3px 17.9px rgba(0, 0, 0, 0.34),
+				0 41.8px 33.4px rgba(0, 0, 0, 0.41), 0 100px 80px rgba(0, 0, 0, 0.57);
 
 			.portafolio__proyecto__img {
-				width: 80%;
-				height: 15rem;
+				width: 100%;
+				height: 20rem;
 				margin: 0 auto;
 			}
 			.portafolio__proyecto__img--1 {
@@ -385,7 +389,10 @@ main {
 					font-family: $tipografia-subtitulos;
 					font-weight: 700;
 					font-size: 1rem;
-					border-radius: 5px;
+					box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.16), 0 6.7px 5.3px rgba(0, 0, 0, 0.23),
+						0 12.5px 10px rgba(0, 0, 0, 0.285), 0 22.3px 17.9px rgba(0, 0, 0, 0.34),
+						0 41.8px 33.4px rgba(0, 0, 0, 0.41), 0 100px 80px rgba(0, 0, 0, 0.57);
+
 					&:hover {
 						transform: scale(1.1);
 						transition: 0.5s;
@@ -399,14 +406,14 @@ main {
 	}
 	.relleno {
 		width: 100%;
-		height: 35rem;
+		height: 40rem;
 		background-color: $color-oscuro;
 		margin-top: -30rem;
 		z-index: 99;
 	}
 	.formulario {
 		background-color: $color-oscuro;
-		height: 70rem;
+		height: 50rem;
 		margin-bottom: 10rem;
 		margin-top: 5rem;
 
@@ -434,24 +441,23 @@ main {
 			background-color: $color-oscuro-2;
 			margin: 0 auto;
 			max-width: 50rem;
-			padding-bottom: 5rem;
+			padding-bottom: 3rem;
 
 			.formulario__contenedor__form {
 				.parte1__form {
 					display: flex;
 					flex-wrap: wrap;
 				}
-				display: grid;
-				grid-template-columns: 1fr;
+
 				text-align: center;
 				gap: 1rem;
 				padding: 2rem;
-				padding-top: 3rem;
+
 				h3 {
 					text-align: center;
 					width: 100%;
-					margin-bottom: 2rem;
-					margin-top: 2rem;
+					margin-bottom: 0.4rem;
+					margin-top: 0.4rem;
 					font-family: $tipografia-subtitulos;
 					color: $color-principal;
 					font-size: 1rem;
@@ -460,7 +466,7 @@ main {
 				input {
 					width: 80%;
 					max-width: 20rem;
-					margin: 0 auto 2rem auto;
+					margin: 0 auto 1.5rem auto;
 					border: none;
 					border-bottom: 2px solid white;
 					background-color: $color-oscuro-2;
@@ -468,34 +474,35 @@ main {
 					text-align: center;
 					padding: 1rem;
 				}
-				button {
-					width: 80%;
-					margin: 5rem auto 0 auto;
 
-					padding: 0.5rem;
-					border: none;
-					background-color: $color-principal;
-					font-family: $tipografia-subtitulos;
-					font-weight: 700;
-					font-size: 1rem;
-					border-radius: 5px;
-					max-width: 15rem;
-					&:hover {
-						transform: scale(1.1);
-						transition: 0.5s;
-						cursor: pointer;
-
-						background-color: #218b7f;
-					}
-				}
 				textarea {
 					width: 80%;
 					margin: 0 auto;
-
+					height: 7rem;
 					border: 2px solid white;
 					background-color: $color-oscuro-2;
 					color: white;
 					padding: 0.5rem;
+				}
+			}
+			.btn-form {
+				width: 80%;
+				margin: 0 auto;
+				display: block;
+				padding: 0.5rem;
+				border: none;
+				background-color: $color-principal;
+				font-family: $tipografia-subtitulos;
+				font-weight: 700;
+				font-size: 1rem;
+
+				max-width: 15rem;
+				&:hover {
+					transform: scale(1.1);
+					transition: 0.5s;
+					cursor: pointer;
+
+					background-color: #218b7f;
 				}
 			}
 		}
@@ -508,14 +515,21 @@ main {
 }
 @media (min-width: 650px) {
 }
+@media (max-width: 900px) {
+	.portafolio {
+		gap: 10rem;
+	}
+}
 @media (min-width: 900px) {
 	main {
 		.portafolio {
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(4, 1fr);
-			height: 140rem;
+			height: 150rem;
+			max-height: 300rem;
 			.curriculum {
 				grid-column: 1/3;
+				margin-top: 10rem;
 			}
 			.portafolio__proyecto.portafolio__proyecto--2 {
 				margin-top: 10rem;
@@ -533,9 +547,28 @@ main {
 				margin-top: 10rem;
 			}
 		}
+		.formulario {
+			height: 50rem;
+			.formulario__contenedor__form {
+				display: flex;
+				#mensaje {
+					height: 11rem;
+				}
+			}
+		}
 	}
 }
 @media (min-width: 1200px) {
+	main {
+		.portafolio {
+			max-height: 100rem;
+			grid-template-columns: repeat(3, 1fr);
+			.curriculum {
+				grid-column: 1/4;
+				margin-top: 10rem;
+			}
+		}
+	}
 }
 @media (min-width: 2000px) {
 }
