@@ -131,7 +131,7 @@
 			</div>
 
 			<button class="curriculum">
-				<a href="1.docx" download>
+				<a href="file:///prueba.txt" download>
 					Descargar Curriculum <i class="icono-curriculum fas fa-file-download"></i>
 				</a>
 			</button>
