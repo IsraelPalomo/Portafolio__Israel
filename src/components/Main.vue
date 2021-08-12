@@ -145,8 +145,8 @@
 					class="formulario__contenedor__form"
 					id="contacto"
 					name="contact"
-					method="POST"
-					data-netlify="true"
+					method="post"
+					netifly
 				>
 					<input type="hidden" name="form-name" value="name_of_my_form" />
 					<div class="parte1__form">
@@ -165,8 +165,8 @@
 						rows="10"
 						placeholder="Escribe tu mensaje..."
 					></textarea>
+					<button class="btn-form" type="submit">Enviar Formulario</button>
 				</form>
-				<button class="btn-form" type="submit">Enviar Formulario</button>
 			</div>
 		</section>
 	</main>
