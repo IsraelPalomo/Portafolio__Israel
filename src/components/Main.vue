@@ -9,9 +9,9 @@
 				<p>
 					Hola 🖐, me llamo Israel actualmente me encuentro inmerso en el mundo del desarrollo web
 					ya hace 3 años , actualmente manejo tecnologias como Html, Css, JavaScripts lo que nos da
-					unas bases solidas para el mundo del desarrollo web , ademas manejo otras tecnologias como
-					Sass, Webpack, Vue.Js, Nuxt, Npm y mas. Tambien estoy enfocado en buenas practicas con
-					metodologias como BEM , Git y GitHub.
+					unas bases sólidas para el mundo del desarrollo web, ademas manejo otras tecnologias como
+					Sass, Webpack, Vue.Js, Nuxt, Npm y mas. También estoy enfocado en buenas prácticas con
+					metodologías como BEM , Git y GitHub.
 				</p>
 			</div>
 		</div>
@@ -27,8 +27,8 @@
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--1"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Proyecto de pagina web para ventas de casas y solares , buen proyecto para iniciarse en
-						el mundo del desarrollo web. Algunas de las tecnolagias usadas son Html, Css
+						Proyecto de página web para ventas de casas y solares, buen proyecto para iniciarse en
+						el mundo del desarrollo web. Algunas de las tecnologías usadas son Html, Css
 						(Principalmente).
 					</p>
 				</div>
@@ -44,8 +44,8 @@
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--2"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Proyecto construido con Vue.js y con Firibase , buen proyecto para practicar bases de
-						datos y inicio de sesion con Firebase y todo los relacionado con Vue. Ademas hemos
+						Proyecto construido con Vue.js y con Firibase, buen proyecto para practicar bases de
+						datos y inicio de sesion con Firebase y todo los relacionado con Vue. Además hemos
 						incluido Vuetify para los estilos.
 					</p>
 				</div>
@@ -62,8 +62,8 @@
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--3"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Proyecto de Ajedrez para practicar jugadas y aperturas , marcandote las amezas
-						potenciales en la posicion addemas de poder cambiar entre las piezas y resetear el
+						Proyecto de Ajedrez para practicar jugadas y aperturas, marcandote las amezas
+						potenciales en la posición además de poder cambiar entre las piezas y resetear el
 						tablero.
 					</p>
 				</div>
@@ -80,8 +80,8 @@
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--4"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						LadingPage de un Hotel, construido con Html, Css y JavaScripts. Ademas de otras
-						tecnologias con Webpack y Sass, buen proyecto para practicar la ceacion desde 0 con
+						LadingPage de un Hotel, construido con Html, Css y JavaScripts. Además de otras
+						tecnologías con Webpack y Sass, buen proyecto para practicar la creacion desde 0 con
 						Webpack.
 					</p>
 				</div>
@@ -99,7 +99,7 @@
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--5"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Aplicacion de clima en distintas zonas. Pudiendo mirar desde Paises y ciudades hasta
+						Aplicación de clima en distintas zonas. Pudiendo mirar desde paises y ciudades hasta
 						pueblos, buen proyecto para practicar como consumir un API REST.
 					</p>
 				</div>
@@ -116,7 +116,7 @@
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--6"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Aplicacion Web que consume una API externa y nos muestra los paises por poblacion. Buen
+						Aplicacion Web que consume una API externa y nos muestra los paises por población. Buen
 						proyecto para practicar estilos y como consumir una API.
 					</p>
 				</div>
