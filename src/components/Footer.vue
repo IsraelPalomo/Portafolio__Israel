@@ -29,14 +29,14 @@ export default {};
 @import "../scss/_variables.scss";
 footer {
 	width: 100%;
-	height: 20rem;
+	height: 25rem;
 	box-shadow: 0 0px 1.8px rgba(0, 0, 0, 0.105), 0 0px 4px rgba(0, 0, 0, 0.155),
 		0 0px 6.7px rgba(0, 0, 0, 0.191), 0 0px 10.2px rgba(0, 0, 0, 0.222),
 		0 0px 14.7px rgba(0, 0, 0, 0.25), 0 0px 20.7px rgba(0, 0, 0, 0.278),
 		0 0px 29.4px rgba(0, 0, 0, 0.309), 0 0px 42.7px rgba(0, 0, 0, 0.345),
 		0 0px 65.8px rgba(0, 0, 0, 0.395), 0 0px 117px rgba(0, 0, 0, 0.5);
 	background-color: #252525;
-	margin-top: -10rem;
+	margin-top: -15rem;
 	h2 {
 		font-family: $tipografia-titulos;
 		color: $color-blanco;

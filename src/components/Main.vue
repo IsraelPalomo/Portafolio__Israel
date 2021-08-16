@@ -129,12 +129,6 @@
 					>
 				</div>
 			</div>
-
-			<button class="curriculum">
-				<a href="file:///prueba.txt" download>
-					Descargar Curriculum <i class="icono-curriculum fas fa-file-download"></i>
-				</a>
-			</button>
 		</section>
 		<img class="separador__portafolio--2" src="..\assets\triangleAsymmetrical.svg" alt="" />
 		<div class="relleno"></div>
@@ -144,27 +138,30 @@
 				<form
 					class="formulario__contenedor__form"
 					id="contacto"
-					name="contact"
-					method="post"
-					netifly
+					name="ask-question"
+					action="https://formspree.io/f/xzbykrgq"
+					method="POST"
 				>
-					<input type="hidden" name="form-name" value="name_of_my_form" />
-					<div class="parte1__form">
-						<h3>NOMBRE</h3>
+					<div class="cuerpo__formulario">
+						<input type="hidden" name="form-name" value="ask-question" />
+						<div class="parte1__form">
+							<h3>NOMBRE</h3>
 
-						<input type="text" name="nombre" id="name" required placeholder="Tu nombre" />
-						<h3>EMAIL</h3>
+							<input type="text" name="nombre" id="name" required placeholder="Tu nombre" />
+							<h3>EMAIL</h3>
 
-						<input type="text" name="correo" id="email" required placeholder="Tu Email" />
+							<input type="text" name="correo" id="email" required placeholder="Tu Email" />
+						</div>
+
+						<textarea
+							name="mensaje"
+							id="mensaje"
+							cols="10"
+							rows="10"
+							placeholder="Escribe tu mensaje..."
+						></textarea>
 					</div>
 
-					<textarea
-						name="mensaje"
-						id="mensaje"
-						cols="10"
-						rows="10"
-						placeholder="Escribe tu mensaje..."
-					></textarea>
 					<button class="btn-form" type="submit">Enviar Formulario</button>
 				</form>
 			</div>
@@ -285,38 +282,6 @@ main {
 		justify-content: center;
 		align-items: center;
 
-		.curriculum {
-			width: 17rem;
-			height: 7rem;
-
-			border: none;
-			background-color: $color-oscuro;
-			letter-spacing: 4px;
-			padding: 2rem;
-			margin: 0 auto 5rem auto;
-			cursor: pointer;
-			border: solid 2px $color-blanco;
-
-			a {
-				text-decoration: none;
-				color: $color-blanco;
-				font-family: $tipografia-subtitulos;
-				font-weight: 900;
-			}
-
-			&:hover {
-				transform: scale(1.1);
-				transition: 0.5s ease;
-				box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.16), 0 6.7px 5.3px rgba(0, 0, 0, 0.23),
-					0 12.5px 10px rgba(0, 0, 0, 0.285), 0 22.3px 17.9px rgba(0, 0, 0, 0.34),
-					0 41.8px 33.4px rgba(0, 0, 0, 0.41), 0 100px 80px rgba(0, 0, 0, 0.57);
-			}
-		}
-		.icono-curriculum {
-			font-size: 1.3rem;
-			margin-top: 1rem;
-		}
-
 		.portafolio__proyecto.portafolio__proyecto--1 {
 			margin-top: 10rem;
 		}
@@ -414,19 +379,19 @@ main {
 	.formulario {
 		background-color: $color-oscuro;
 		height: 50rem;
-		margin-bottom: 10rem;
+		margin-bottom: 15rem;
 		margin-top: 5rem;
 
 		.formulario__titulo {
 			text-align: center;
 			padding: 1rem;
-			background-color: $color-oscuro;
+			background-color: $color-principal;
 
 			width: auto;
 			margin: 0 auto;
 			max-width: 15rem;
-
-			color: $color-principal;
+			font-weight: 900;
+			color: $color-oscuro;
 			font-family: $tipografia-subtitulos;
 			font-size: 1.5rem;
 		}
@@ -442,8 +407,13 @@ main {
 			margin: 0 auto;
 			max-width: 50rem;
 			padding-bottom: 3rem;
+			max-height: 30rem;
 
 			.formulario__contenedor__form {
+				.cuerpo__formulario {
+					display: grid;
+					grid-template-columns: 1fr;
+				}
 				.parte1__form {
 					display: flex;
 					flex-wrap: wrap;
@@ -477,32 +447,36 @@ main {
 
 				textarea {
 					width: 80%;
-					margin: 0 auto;
+					margin: 1.5rem auto;
 					height: 7rem;
 					border: 2px solid white;
 					background-color: $color-oscuro-2;
 					color: white;
 					padding: 0.5rem;
+					margin-bottom: 3rem;
 				}
-			}
-			.btn-form {
-				width: 80%;
-				margin: 0 auto;
-				display: block;
-				padding: 0.5rem;
-				border: none;
-				background-color: $color-principal;
-				font-family: $tipografia-subtitulos;
-				font-weight: 700;
-				font-size: 1rem;
+				.btn-form {
+					width: 80%;
+					margin: 0 auto;
+					display: block;
+					padding: 0.5rem;
 
-				max-width: 15rem;
-				&:hover {
-					transform: scale(1.1);
-					transition: 0.5s;
-					cursor: pointer;
+					border: none;
+					background-color: $color-principal;
+					font-family: $tipografia-subtitulos;
+					font-weight: 700;
+					font-size: 1rem;
+					box-shadow: 0 0px 2.2px rgba(0, 0, 0, 0.141), 0 0px 5.3px rgba(0, 0, 0, 0.202),
+						0 0px 10px rgba(0, 0, 0, 0.25), 0 0px 17.9px rgba(0, 0, 0, 0.298),
+						0 0px 33.4px rgba(0, 0, 0, 0.359), 0 0px 80px rgba(0, 0, 0, 0.5);
+					max-width: 15rem;
+					&:hover {
+						transform: scale(1.1);
+						transition: 0.5s;
+						cursor: pointer;
 
-					background-color: #218b7f;
+						background-color: #218b7f;
+					}
 				}
 			}
 		}
@@ -549,8 +523,10 @@ main {
 		}
 		.formulario {
 			height: 50rem;
+			.cuerpo__formulario {
+				grid-template-columns: 1fr 1fr;
+			}
 			.formulario__contenedor__form {
-				display: flex;
 				#mensaje {
 					height: 11rem;
 				}
