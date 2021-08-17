@@ -130,14 +130,13 @@
 				</div>
 			</div>
 		</section>
-		<img class="separador__portafolio--2" src="..\assets\triangleAsymmetrical.svg" alt="" />
+		<img class="separador__portafolio--2 " src="..\assets\triangleAsymmetrical.svg" alt="" />
 		<div class="relleno"></div>
-		<section class="formulario">
+		<section class="formulario" id="contacto">
 			<div class="formulario__titulo">Contactame...</div>
 			<div class="formulario__contenedor">
 				<form
 					class="formulario__contenedor__form"
-					id="contacto"
 					name="ask-question"
 					action="https://formspree.io/f/xzbykrgq"
 					method="POST"
@@ -275,6 +274,7 @@ main {
 		width: 100%;
 		margin-top: -8.2rem;
 		padding-top: 5rem;
+		padding-bottom: 10rem;
 		display: grid;
 		position: relative;
 		grid-template-columns: 1fr;

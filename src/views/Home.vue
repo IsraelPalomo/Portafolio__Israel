@@ -23,6 +23,9 @@ export default {
 		Main,
 		Footer,
 	},
+	mounted() {
+		AOS.init();
+	},
 };
 </script>
 <style lang="scss"></style>

@@ -1,7 +1,10 @@
 <template>
 	<footer id="sociales">
 		<h2>Israel Palomo</h2>
-		<p>Desarrollador y programador web</p>
+		<p>
+			Desarrollador y <br />
+			programador web
+		</p>
 		<hr />
 		<div class="footer__sociales">
 			<a href="https://www.instagram.com/diplodev/" target="_blank"
@@ -47,14 +50,14 @@ footer {
 	p {
 		font-family: $tipografia-subtitulos;
 		color: $color-blanco;
-		letter-spacing: 6px;
+		letter-spacing: 4px;
 		text-align: center;
 		padding-top: 2rem;
 		font-weight: 900;
 		color: $color-principal;
 	}
 	hr {
-		margin-top: 1rem;
+		margin-top: 3rem;
 	}
 	.footer__sociales {
 		margin-top: 5rem;
