@@ -2,7 +2,7 @@
 	<footer id="sociales">
 		<h2>Israel Palomo</h2>
 		<p>
-			Desarrollador y <br />
+			Desarrollador y <br /><br />
 			programador web
 		</p>
 		<hr />

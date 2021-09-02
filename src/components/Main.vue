@@ -15,15 +15,14 @@
 				</p>
 			</div>
 		</div>
-		<img
-			class="separador__portafolio"
-			id="proyectos"
-			src="..\assets\triangleAsymmetrical.svg"
-			alt=""
-		/>
+
 		<h2 class="portafolio__titulo">Mis Proyectos</h2>
 		<section class="portafolio">
-			<div class="portafolio__proyecto portafolio__proyecto--1">
+			<div
+				class="portafolio__proyecto portafolio__proyecto--1"
+				data-aos="fade-left"
+				data-aos-duration="1000"
+			>
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--1"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
@@ -40,7 +39,11 @@
 				</div>
 			</div>
 
-			<div class="portafolio__proyecto portafolio__proyecto--2">
+			<div
+				class="portafolio__proyecto portafolio__proyecto--2"
+				data-aos="fade-up"
+				data-aos-duration="1500"
+			>
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--2"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
@@ -58,7 +61,11 @@
 					>
 				</div>
 			</div>
-			<div class="portafolio__proyecto portafolio__proyecto--3">
+			<div
+				class="portafolio__proyecto portafolio__proyecto--3"
+				data-aos="fade-right"
+				data-aos-duration="1000"
+			>
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--3"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
@@ -76,7 +83,11 @@
 					>
 				</div>
 			</div>
-			<div class="portafolio__proyecto portafolio__proyecto--4">
+			<div
+				class="portafolio__proyecto portafolio__proyecto--4"
+				data-aos="fade-left"
+				data-aos-duration="1000"
+			>
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--4"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
@@ -95,7 +106,11 @@
 				</div>
 			</div>
 
-			<div class="portafolio__proyecto portafolio__proyecto--5">
+			<div
+				class="portafolio__proyecto portafolio__proyecto--5"
+				data-aos="fade-up"
+				data-aos-duration="1500"
+			>
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--5"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
@@ -112,7 +127,11 @@
 					>
 				</div>
 			</div>
-			<div class="portafolio__proyecto portafolio__proyecto--6">
+			<div
+				class="portafolio__proyecto portafolio__proyecto--6"
+				data-aos="fade-right"
+				data-aos-duration="1000"
+			>
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--6"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
@@ -130,10 +149,12 @@
 				</div>
 			</div>
 		</section>
-		<img class="separador__portafolio--2 " src="..\assets\triangleAsymmetrical.svg" alt="" />
+
 		<div class="relleno"></div>
 		<section class="formulario" id="contacto">
-			<div class="formulario__titulo">Contactame...</div>
+			<div class="formulario__titulo">
+				Contactame...
+			</div>
 			<div class="formulario__contenedor">
 				<form
 					class="formulario__contenedor__form"
@@ -142,14 +163,36 @@
 					method="POST"
 				>
 					<div class="cuerpo__formulario">
-						<input type="hidden" name="form-name" value="ask-question" />
+						<input
+							type="hidden"
+							name="form-name"
+							value="ask-question"
+							data-aos="fade-up-right"
+							data-aos-duration="300"
+						/>
 						<div class="parte1__form">
 							<h3>NOMBRE</h3>
 
-							<input type="text" name="nombre" id="name" required placeholder="Tu nombre" />
+							<input
+								type="text"
+								name="nombre"
+								id="name"
+								required
+								placeholder="Tu nombre"
+								data-aos="fade-up-right"
+								data-aos-duration="800"
+							/>
 							<h3>EMAIL</h3>
 
-							<input type="text" name="correo" id="email" required placeholder="Tu Email" />
+							<input
+								type="text"
+								name="correo"
+								id="email"
+								required
+								placeholder="Tu Email"
+								data-aos="fade-up-right"
+								data-aos-duration="1300"
+							/>
 						</div>
 
 						<textarea
@@ -158,6 +201,8 @@
 							cols="10"
 							rows="10"
 							placeholder="Escribe tu mensaje..."
+							data-aos="fade-up-right"
+							data-aos-duration="1800"
 						></textarea>
 					</div>
 
@@ -195,6 +240,8 @@ main {
 		margin-top: 10rem;
 		margin-right: 1rem;
 		margin-left: 1rem;
+		padding-bottom: 5rem;
+
 		.contenedor---img {
 			margin: 0 auto;
 
@@ -260,7 +307,7 @@ main {
 		background-color: $color-oscuro;
 		position: relative;
 		width: auto;
-		margin: 10rem auto 0 auto;
+		margin: 13rem auto -17rem auto;
 		max-width: 15rem;
 		z-index: 99999;
 		color: $color-principal;
@@ -268,11 +315,15 @@ main {
 	}
 
 	.portafolio {
-		background-color: $color-principal;
+		background-color: #1a1a1b;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%231b2a29' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%231c3a38' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%231d4a46' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%231e5b54' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%231f6b62' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23207b71' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23218B7F' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+		background-attachment: fixed;
+		background-size: cover;
+
 		z-index: 9999;
 		height: auto;
 		width: 100%;
-		margin-top: -8.2rem;
+
 		padding-top: 5rem;
 		padding-bottom: 10rem;
 		display: grid;
@@ -281,6 +332,7 @@ main {
 		max-height: 350rem;
 		justify-content: center;
 		align-items: center;
+		margin-top: 8rem;
 
 		.portafolio__proyecto.portafolio__proyecto--1 {
 			margin-top: 10rem;

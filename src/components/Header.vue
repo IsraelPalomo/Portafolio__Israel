@@ -1,7 +1,7 @@
 <template>
 	<header id="inicio">
 		<h1>Israel Palomo España</h1>
-		<h2 class="animate__animated animate__flipInX">
+		<h2 class="animate__animated ">
 			Desarrollador Y <br />
 			Programador Web
 		</h2>
@@ -10,17 +10,17 @@
 		</div>
 		<div class="header__proyectos">
 			<a href="https://venta-de-casas-y-pisos.netlify.app/" target="_blank">
-				<div class="header__proyectos__proyecto--1">
+				<div class="header__proyectos__proyecto--1" data-aos="fade-left" data-aos-duration="1000">
 					<img src="..\assets\portatil.png" alt="" />
 				</div>
 			</a>
 			<a href="https://app-tiempo-israel.netlify.app/" target="_blank">
-				<div class="header__proyectos__proyecto--2">
+				<div class="header__proyectos__proyecto--2" data-aos="fade-left" data-aos-duration="2000">
 					<img src="..\assets\movil.png" alt="" />
 				</div>
 			</a>
 			<a href="https://hotel-philidor.netlify.app/" target="_blank">
-				<div class="header__proyectos__proyecto--3">
+				<div class="header__proyectos__proyecto--3" data-aos="fade-left" data-aos-duration="3000">
 					<img src="..\assets\tv.png" alt="" />
 				</div>
 			</a>
@@ -40,6 +40,7 @@ header {
 	background-image: url("../assets/Fondo__Header.jpg");
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 
 	display: grid;
 	grid-template-columns: 1fr;
