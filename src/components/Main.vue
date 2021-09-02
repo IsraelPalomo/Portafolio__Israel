@@ -222,6 +222,7 @@ export default {};
 main {
 	background-color: $color-oscuro;
 	width: 100%;
+	overflow: hidden;
 
 	padding-top: 10rem;
 
