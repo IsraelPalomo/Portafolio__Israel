@@ -141,10 +141,10 @@
 					</p>
 				</div>
 				<div class="portafolio__proyecto__btn">
-					<a href="https://buscador-paises.netlify.app" target="_blank"
+					<a href="https://pokedex-israel.netlify.app" target="_blank"
 						><button>Ver Sitio</button></a
 					>
-					<a href="https://github.com/IsraelPalomo/Bucador-Paises" target="_blank"
+					<a href="https://github.com/IsraelPalomo/pokedex" target="_blank"
 						><button>Ver Codigo</button></a
 					>
 				</div>
