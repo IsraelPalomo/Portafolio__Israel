@@ -45,25 +45,31 @@ header {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(2, 1fr);
+
 	text-align: center;
 	align-items: center;
 	padding-top: 6rem;
 	h1 {
 		color: $color-blanco;
-		font-family: $tipografia-titulos;
-		padding: 1em;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+			"Open Sans", "Helvetica Neue", sans-serif;
+		padding: 1.5rem 1rem;
 
-		backdrop-filter: blur(4px);
-		-webkit--filter: blur(5px);
-		border: 2px solid $color-blanco;
+		background-color: $color-oscuro;
+		box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.112), 0 6.7px 5.3px rgba(0, 0, 0, 0.162),
+			0 12.5px 10px rgba(0, 0, 0, 0.2), 0 22.3px 17.9px rgba(0, 0, 0, 0.238),
+			0 41.8px 33.4px rgba(0, 0, 0, 0.288), 0 100px 80px rgba(0, 0, 0, 0.4);
 
 		max-width: 700px;
-		margin: 2rem auto 0 auto;
+
+		margin: 2rem auto -5rem auto;
 		width: auto;
+		font-size: 1.7rem;
 	}
 	h2 {
 		color: $color-oscuro;
-		font-family: $tipografia-subtitulos;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+			"Open Sans", "Helvetica Neue", sans-serif;
 		width: 80%;
 		margin: -6rem auto 0 auto;
 		padding: 1rem;

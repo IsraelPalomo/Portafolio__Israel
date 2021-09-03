@@ -16,7 +16,7 @@
 			</div>
 		</div>
 
-		<h2 class="portafolio__titulo">Mis Proyectos</h2>
+		<h2 class="portafolio__titulo" id="proyectos">Mis Proyectos</h2>
 		<section class="portafolio">
 			<div
 				class="portafolio__proyecto portafolio__proyecto--1"
@@ -135,8 +135,9 @@
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--6"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Aplicacion Web que consume una API externa y nos muestra los paises por población. Buen
-						proyecto para practicar estilos y como consumir una API.
+						Aplicacion de pokedex con funcion de buscar por id y nombre, con ayuda de Poke API muy
+						buen proyecto para practicar paginacion, rutas, llamadas a APIs. Insprescindible para
+						todo amante de pokemon.
 					</p>
 				</div>
 				<div class="portafolio__proyecto__btn">
@@ -231,17 +232,21 @@ main {
 		padding: 1rem;
 		background-color: $color-principal;
 		width: auto;
-		margin: 0 auto;
+		margin: 0 auto -5rem auto;
 		max-width: 15rem;
 
 		color: $color-oscuro;
-		font-family: $tipografia-subtitulos;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+			"Open Sans", "Helvetica Neue", sans-serif;
 	}
 	.sobreMi {
 		margin-top: 10rem;
 		margin-right: 1rem;
 		margin-left: 1rem;
 		padding-bottom: 5rem;
+		background-image: url("../assets/hola.png");
+		background-size: cover;
+		background-position: center;
 
 		.contenedor---img {
 			margin: 0 auto;
@@ -282,12 +287,14 @@ main {
 
 			max-width: 35rem;
 			margin: auto auto;
+
 			background-color: $color-oscuro-2;
 
 			p {
 				text-align: center;
 				color: $color-principal;
-				font-family: $tipografia-parrafos;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+					Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 				font-size: 1.2rem;
 			}
 		}
@@ -312,7 +319,8 @@ main {
 		max-width: 15rem;
 		z-index: 99999;
 		color: $color-principal;
-		font-family: $tipografia-subtitulos;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+			"Open Sans", "Helvetica Neue", sans-serif;
 	}
 
 	.portafolio {
@@ -392,6 +400,7 @@ main {
 				text-align: justify;
 				color: $color-blanco;
 				background-color: $color-oscuro;
+
 				p {
 					padding: 1.5rem;
 				}
@@ -404,7 +413,8 @@ main {
 					padding: 0.5rem;
 					border: none;
 					background-color: $color-principal;
-					font-family: $tipografia-subtitulos;
+					font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+						Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 					font-weight: 700;
 					font-size: 1rem;
 					box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.16), 0 6.7px 5.3px rgba(0, 0, 0, 0.23),
@@ -445,7 +455,8 @@ main {
 			max-width: 15rem;
 			font-weight: 900;
 			color: $color-oscuro;
-			font-family: $tipografia-subtitulos;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+				"Open Sans", "Helvetica Neue", sans-serif;
 			font-size: 1.5rem;
 		}
 		.formulario__contenedor {
@@ -481,7 +492,8 @@ main {
 					width: 100%;
 					margin-bottom: 0.4rem;
 					margin-top: 0.4rem;
-					font-family: $tipografia-subtitulos;
+					font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+						Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 					color: $color-principal;
 					font-size: 1rem;
 				}
@@ -516,7 +528,8 @@ main {
 
 					border: none;
 					background-color: $color-principal;
-					font-family: $tipografia-subtitulos;
+					font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+						Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 					font-weight: 700;
 					font-size: 1rem;
 					box-shadow: 0 0px 2.2px rgba(0, 0, 0, 0.141), 0 0px 5.3px rgba(0, 0, 0, 0.202),

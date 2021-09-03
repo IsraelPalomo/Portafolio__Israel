@@ -2,7 +2,7 @@
 	<footer id="sociales">
 		<h2>Israel Palomo</h2>
 		<p>
-			Desarrollador y <br /><br />
+			Desarrollador y <br />
 			programador web
 		</p>
 		<hr />
@@ -41,14 +41,16 @@ footer {
 	background-color: #252525;
 	margin-top: -15rem;
 	h2 {
-		font-family: $tipografia-titulos;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+			"Open Sans", "Helvetica Neue", sans-serif;
 		color: $color-blanco;
 		letter-spacing: 5px;
 		text-align: center;
 		padding-top: 4rem;
 	}
 	p {
-		font-family: $tipografia-subtitulos;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+			"Open Sans", "Helvetica Neue", sans-serif;
 		color: $color-blanco;
 		letter-spacing: 4px;
 		text-align: center;
@@ -85,7 +87,8 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-family: $tipografia-subtitulos;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
 	font-weight: 900;
 }
 </style>

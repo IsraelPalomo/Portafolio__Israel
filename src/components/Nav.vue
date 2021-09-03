@@ -86,7 +86,8 @@ nav {
 			margin-right: 1.5rem;
 			font-weight: 600;
 			letter-spacing: 3px;
-			font-family: $tipografia-subtitulos;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+				"Open Sans", "Helvetica Neue", sans-serif;
 			&:hover {
 				color: $color-principal;
 			}
@@ -104,6 +105,8 @@ nav {
 	transition-timing-function: linear;
 	display: flex;
 	justify-content: center;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
 	align-items: center;
 	position: fixed;
 	z-index: 999999;
@@ -119,7 +122,8 @@ nav {
 			color: $color-blanco;
 			font-weight: 600;
 			letter-spacing: 3px;
-			font-family: $tipografia-subtitulos;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+				"Open Sans", "Helvetica Neue", sans-serif;
 			&:hover {
 				color: $color-principal;
 				transform: scale(1.2);
