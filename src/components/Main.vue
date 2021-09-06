@@ -508,6 +508,7 @@ main {
 					color: white;
 					text-align: center;
 					padding: 1rem;
+					outline: none;
 				}
 
 				textarea {
@@ -519,6 +520,7 @@ main {
 					color: white;
 					padding: 0.5rem;
 					margin-bottom: 3rem;
+					outline: none;
 				}
 				.btn-form {
 					width: 80%;
