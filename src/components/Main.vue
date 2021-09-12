@@ -47,7 +47,7 @@
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--2"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Proyecto construido con Vue.js y con Firibase, buen proyecto para practicar bases de
+						Proyecto construido con Vue.js y con Firebase, buen proyecto para practicar bases de
 						datos y inicio de sesion con Firebase y todo los relacionado con Vue. Además hemos
 						incluido Vuetify para los estilos.
 					</p>
