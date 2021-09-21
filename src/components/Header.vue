@@ -11,17 +11,17 @@
 		<div class="header__proyectos">
 			<a href="https://venta-de-casas-y-pisos.netlify.app/" target="_blank">
 				<div class="header__proyectos__proyecto--1" data-aos="fade-left" data-aos-duration="1000">
-					<img src="..\assets\portatil.png" alt="" />
+					<img loading="lazy" src="..\assets\portatil.webp" alt="" />
 				</div>
 			</a>
 			<a href="https://app-tiempo-israel.netlify.app/" target="_blank">
 				<div class="header__proyectos__proyecto--2" data-aos="fade-left" data-aos-duration="2000">
-					<img src="..\assets\movil.png" alt="" />
+					<img loading="lazy" src="..\assets\movil.webp" alt="" />
 				</div>
 			</a>
 			<a href="https://hotel-philidor.netlify.app/" target="_blank">
 				<div class="header__proyectos__proyecto--3" data-aos="fade-left" data-aos-duration="3000">
-					<img src="..\assets\tv.png" alt="" />
+					<img loading="lazy" src="..\assets\tv.webp" alt="" />
 				</div>
 			</a>
 		</div>
@@ -37,7 +37,7 @@ export default {};
 header {
 	overflow: hidden;
 	height: calc(100vh - 6rem);
-	background-image: url("../assets/Fondo__Header.jpg");
+	background-image: url("../assets/Fondo__Header.webp");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;

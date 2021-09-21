@@ -47,16 +47,14 @@
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--2"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Proyecto construido con Vue.js y con Firebase, buen proyecto para practicar bases de
-						datos y inicio de sesion con Firebase y todo los relacionado con Vue. Además hemos
-						incluido Vuetify para los estilos.
+						Proyecto para club de ajedrez local, con informacion sobre proximos torneos y quedadas.
+						Realizado con Html, Css, JavaScript, Sass, Webpack ect, ademas de utilizar FullPage.js
+						para estructurar la pagina.
 					</p>
 				</div>
 				<div class="portafolio__proyecto__btn">
-					<a href="https://auth-google-facebook.netlify.app" target="_blank"
-						><button>Ver Sitio</button></a
-					>
-					<a href="https://github.com/IsraelPalomo/auth-google-facebook" target="_blank"
+					<a href="https://ajedrejos.netlify.app/" target="_blank"><button>Ver Sitio</button></a>
+					<a href="https://github.com/IsraelPalomo/Ajedrejos" target="_blank"
 						><button>Ver Codigo</button></a
 					>
 				</div>
@@ -244,7 +242,7 @@ main {
 		margin-right: 1rem;
 		margin-left: 1rem;
 		padding-bottom: 5rem;
-		background-image: url("../assets/hola.png");
+		background-image: url("../assets/hola.webp");
 		background-size: cover;
 		background-position: center;
 
@@ -256,7 +254,7 @@ main {
 			justify-content: space-around;
 			gap: 4rem;
 			.sobreMi__img {
-				background-image: url("../assets/avatar.jpeg");
+				background-image: url("../assets/avatar.webp");
 				background-size: cover;
 				background-position: center;
 				width: 10rem;
@@ -364,32 +362,32 @@ main {
 				margin: 0 auto;
 			}
 			.portafolio__proyecto__img--1 {
-				background-image: url("../assets/proyecto1.png");
+				background-image: url("../assets/proyecto1.webp");
 				background-position: left;
 				background-size: cover;
 			}
 			.portafolio__proyecto__img--2 {
-				background-image: url("../assets/proyecto2.png");
+				background-image: url("../assets/AjedrejosCaptura.webp");
 				background-position: center;
 				background-size: cover;
 			}
 			.portafolio__proyecto__img--3 {
-				background-image: url("../assets/proyecto3.png");
+				background-image: url("../assets/proyecto3.webp");
 				background-position: left;
 				background-size: cover;
 			}
 			.portafolio__proyecto__img--4 {
-				background-image: url("../assets/proyecto4.png");
+				background-image: url("../assets/proyecto4.webp");
 				background-position: center;
 				background-size: cover;
 			}
 			.portafolio__proyecto__img--5 {
-				background-image: url("../assets/proyecto5.png");
+				background-image: url("../assets/proyecto5.webp");
 				background-position: center;
 				background-size: cover;
 			}
 			.portafolio__proyecto__img--6 {
-				background-image: url("../assets/proyecto6.png");
+				background-image: url("../assets/proyecto6.webp");
 				background-position: center;
 				background-size: cover;
 			}
@@ -397,7 +395,7 @@ main {
 				width: 90%;
 				height: auto;
 				margin: 0 auto;
-				text-align: justify;
+				text-align: center;
 				color: $color-blanco;
 				background-color: $color-oscuro;
 
@@ -509,6 +507,10 @@ main {
 					text-align: center;
 					padding: 1rem;
 					outline: none;
+					&:hover {
+						border-bottom: 2px solid $color-principal;
+						transform: scale(1.01);
+					}
 				}
 
 				textarea {
@@ -521,6 +523,10 @@ main {
 					padding: 0.5rem;
 					margin-bottom: 3rem;
 					outline: none;
+					&:hover {
+						border: 2px solid $color-principal;
+						transform: scale(1.01);
+					}
 				}
 				.btn-form {
 					width: 80%;
