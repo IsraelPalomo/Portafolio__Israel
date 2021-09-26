@@ -1,6 +1,6 @@
 <template>
 	<div class="Blog">
-		<img src="../assets/desarrollo.png" alt="img blog en desarollo" />
+		<img src="../assets/desarrollo.webp" alt="img blog en desarollo" />
 		<div class="container">
 			<h2>Blog Actualmente En Desarrollo</h2>
 			<router-link to="/"><button>Volver al inicio</button></router-link>
