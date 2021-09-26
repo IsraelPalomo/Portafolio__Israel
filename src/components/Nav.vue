@@ -59,7 +59,7 @@ nav {
 	z-index: 9999999;
 	.nav__logo {
 		height: 5rem;
-		width: auto;
+		width: 10rem;
 		cursor: pointer;
 	}
 	.nav__icono--menu {
