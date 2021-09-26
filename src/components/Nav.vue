@@ -1,7 +1,7 @@
 <template>
 	<nav class="nav">
 		<a href="http://diplodev.com/" target="_blank"
-			><img class="nav__logo" src="..\assets\Logotipo__Blog.svg" alt=""
+			><img class="nav__logo" src="..\assets\Logotipo__Blog.svg" alt="logo blog"
 		/></a>
 		<div @click="menuDesplegable()" class="nav__icono--menu"></div>
 		<div class="nav__menu--responsive">
