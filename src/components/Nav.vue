@@ -1,7 +1,7 @@
 <template>
 	<nav class="nav">
 		<router-link to="/blog"
-			>Blog<img class="nav__logo" src="..\assets\Logotipo__Blog.svg" alt="logo blog"
+			><img class="nav__logo" src="..\assets\Logotipo__Blog.svg" alt="logo blog"
 		/></router-link>
 		<div @click="menuDesplegable()" class="nav__icono--menu"></div>
 		<div class="nav__menu--responsive">
