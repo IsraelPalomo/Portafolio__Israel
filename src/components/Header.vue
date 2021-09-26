@@ -100,26 +100,6 @@ header {
 		display: none;
 		margin-left: 5rem;
 		margin-top: -7rem;
-		&:hover {
-			.header__proyectos__proyecto--1 {
-				img {
-					transition: 1s linear;
-					transform: translateX(50px) scale(1.1);
-				}
-			}
-			.header__proyectos__proyecto--2 {
-				img {
-					transition: 1.3s ease;
-					transform: translateX(-100px) scale(1.2);
-				}
-			}
-			.header__proyectos__proyecto--3 {
-				img {
-					transition: 1.1s ease-in-out;
-					transform: translateX(-70px);
-				}
-			}
-		}
 
 		.header__proyectos__proyecto--1 {
 			img {
@@ -127,8 +107,6 @@ header {
 				height: 15rem;
 				filter: drop-shadow(40px -30px 20px #000);
 			}
-
-			cursor: pointer;
 
 			position: relative;
 			top: 15rem;
@@ -143,7 +121,6 @@ header {
 				filter: drop-shadow(40px -30px 20px #000);
 			}
 
-			cursor: pointer;
 			width: 5rem;
 			position: relative;
 			top: 0rem;
@@ -156,8 +133,6 @@ header {
 				height: 25rem;
 				filter: drop-shadow(40px 30px 30px #000);
 			}
-
-			cursor: pointer;
 
 			position: relative;
 			top: -25rem;
