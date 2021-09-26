@@ -156,7 +156,7 @@
 			</div>
 			<div class="formulario__contenedor">
 				<form
-					class="formulario__contenedor__form"
+					class="formulario__contenedor__form formulario"
 					name="ask-question"
 					action="https://formspree.io/f/xzbykrgq"
 					method="POST"
