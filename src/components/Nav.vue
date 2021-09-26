@@ -1,12 +1,12 @@
 <template>
 	<nav class="nav">
-		<a href="http://diplodev.com/" target="_blank"
-			><img class="nav__logo" src="..\assets\Logotipo__Blog.svg" alt="logo blog"
-		/></a>
+		<router-link to="/blog"
+			>Blog<img class="nav__logo" src="..\assets\Logotipo__Blog.svg" alt="logo blog"
+		/></router-link>
 		<div @click="menuDesplegable()" class="nav__icono--menu"></div>
 		<div class="nav__menu--responsive">
 			<a href="#inicio">Inicio <span>|</span></a>
-			<a href="https://diplodev.com/">Blog<span>|</span></a>
+			<router-link to="/blog">Blog<span>|</span></router-link>
 			<a href="#sobreMi">SobreMi<span>|</span></a
 			><a href="#proyectos">Proyectos <span>|</span></a
 			><a href="#contacto">Contacto <span>|</span></a
@@ -16,8 +16,9 @@
 	<section class="menu--desplegable">
 		<div class="menu__enlaces">
 			<a href="#inicio" @click="menuDesplegable()">Inicio</a>
-			<a href="https://diplodev.com/" @click="menuDesplegable()">Blog</a
-			><a href="#sobreMi" @click="menuDesplegable()">Sobre Mi</a
+
+			<router-link to="/blog" @click="menuDesplegable()">Blog</router-link>
+			<a href="#sobreMi" @click="menuDesplegable()">Sobre Mi</a
 			><a href="#proyectos" @click="menuDesplegable()">Proyectos</a
 			><a href="#contacto" @click="menuDesplegable()">Contacto</a>
 		</div>
