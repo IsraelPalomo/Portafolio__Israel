@@ -4,7 +4,9 @@
 	"private": true,
 	"scripts": {
 		"serve": "vue-cli-service serve",
-		"build": "vue-cli-service build"
+		"build": "vue-cli-service build",
+		"lint": "eslint src/",
+		"lint--fix": "eslint src/ --fix"
 	},
 	"dependencies": {
 		"aos": "^3.0.0-beta.6",
@@ -20,6 +22,10 @@
 		"@vue/cli-plugin-vuex": "~4.5.0",
 		"@vue/cli-service": "~4.5.0",
 		"@vue/compiler-sfc": "^3.0.0",
+		"eslint": "^7.32.0",
+		"eslint-config-airbnb-base": "^14.2.1",
+		"eslint-plugin-import": "^2.24.2",
+		"eslint-plugin-vue": "^7.18.0",
 		"node-sass": "^6.0.1",
 		"sass": "^1.26.5",
 		"sass-loader": "^8.0.2"
