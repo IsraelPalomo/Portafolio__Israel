@@ -26,16 +26,17 @@
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--1"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Proyecto de página web para ventas de casas y solares, buen proyecto para iniciarse en
-						el mundo del desarrollo web. Algunas de las tecnologías usadas son Html, Css
-						(Principalmente).
+						Pagina web de empresa de construcción, algunas de las tecnologías utilizadas para el
+						proyectos son HTML5, CSS3, Javascript, Sass, Webpack, Figma (Para el primer diseño de la
+						pagina). Además de un buen control de versiones con Git y GitHub, donde podreis ver el
+						codigo de la pagina web.
 					</p>
 				</div>
 				<div class="portafolio__proyecto__btn">
-					<a href="https://venta-de-casas-y-pisos.netlify.app" target="_blank"
-						><button>Ver Sitio</button></a
+					<a href="https://lacavi.netlify.app/" target="_blank"><button>Ver Sitio</button></a>
+					<a href="https://github.com/IsraelPalomo/LaCavi-S.L" target="_blank"
+						><button>Ver Codigo</button></a
 					>
-					<button>Ver Codigo</button>
 				</div>
 			</div>
 
@@ -67,16 +68,14 @@
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--3"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Proyecto de Ajedrez para practicar jugadas y aperturas, marcandote las amezas
-						potenciales en la posición además de poder cambiar entre las piezas y resetear el
-						tablero.
+						Página web con mucho estilo donde se venden productos hechos con madera, algunas de la
+						tecnologías que he usado para la creación de este sitio web son HTML5, CSS3,
+						JavaScripts, Webpack, Sass, Prettier, Eslint, Git, GitHub etc.
 					</p>
 				</div>
 				<div class="portafolio__proyecto__btn">
-					<a href="https://app-ajedrez-israel.netlify.app" target="_blank"
-						><button>Ver Sitio</button></a
-					>
-					<a href="https://github.com/IsraelPalomo/App__Ajedrez" target="_blank"
+					<a href="https://artesanova.netlify.app" target="_blank"><button>Ver Sitio</button></a>
+					<a href="https://github.com/IsraelPalomo/artesanova" target="_blank"
 						><button>Ver Codigo</button></a
 					>
 				</div>
@@ -133,16 +132,16 @@
 				<div class="portafolio__proyecto__img portafolio__proyecto__img--6"></div>
 				<div class="portafolio__proyecto__texto">
 					<p>
-						Aplicacion de pokedex con funcion de buscar por id y nombre, con ayuda de Poke API muy
-						buen proyecto para practicar paginacion, rutas, llamadas a APIs. Insprescindible para
-						todo amante de pokemon.
+						CRUD de tareas realizado con Vue.js y Vuex muy buen proyecto para repasar todo el tema
+						de Vuex así como el localstorage. Algunas de las tecnologías utilizadas son Vue.js,
+						Vuex, VueRouter, Sass, Bootstrap, nmp etc.
 					</p>
 				</div>
 				<div class="portafolio__proyecto__btn">
-					<a href="https://pokedex-israel.netlify.app" target="_blank"
+					<a href="https://crudlocalstorage.netlify.app" target="_blank"
 						><button>Ver Sitio</button></a
 					>
-					<a href="https://github.com/IsraelPalomo/pokedex" target="_blank"
+					<a href="https://github.com/IsraelPalomo/CRUD_LocalStorage" target="_blank"
 						><button>Ver Codigo</button></a
 					>
 				</div>
@@ -362,34 +361,40 @@ main {
 				margin: 0 auto;
 			}
 			.portafolio__proyecto__img--1 {
-				background-image: url("../assets/proyecto1.webp");
+				background-image: url("../assets/lacavi.png");
 				background-position: left;
-				background-size: cover;
+				background-size: contain;
+				background-repeat: no-repeat;
 			}
 			.portafolio__proyecto__img--2 {
 				background-image: url("../assets/AjedrejosCaptura.webp");
 				background-position: center;
-				background-size: cover;
+				background-size: contain;
+				background-repeat: no-repeat;
 			}
 			.portafolio__proyecto__img--3 {
-				background-image: url("../assets/proyecto3.webp");
-				background-position: left;
-				background-size: cover;
+				background-image: url("../assets/artesanova.png");
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
 			}
 			.portafolio__proyecto__img--4 {
 				background-image: url("../assets/proyecto4.webp");
 				background-position: center;
-				background-size: cover;
+				background-size: contain;
+				background-repeat: no-repeat;
 			}
 			.portafolio__proyecto__img--5 {
 				background-image: url("../assets/proyecto5.webp");
 				background-position: center;
-				background-size: cover;
+				background-size: contain;
+				background-repeat: no-repeat;
 			}
 			.portafolio__proyecto__img--6 {
-				background-image: url("../assets/proyecto6.webp");
+				background-image: url("../assets/crud.png");
 				background-position: center;
-				background-size: cover;
+				background-size: contain;
+				background-repeat: no-repeat;
 			}
 			.portafolio__proyecto__texto {
 				width: 90%;

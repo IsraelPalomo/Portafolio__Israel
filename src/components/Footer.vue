@@ -39,7 +39,7 @@ footer {
 		0 0px 29.4px rgba(0, 0, 0, 0.309), 0 0px 42.7px rgba(0, 0, 0, 0.345),
 		0 0px 65.8px rgba(0, 0, 0, 0.395), 0 0px 117px rgba(0, 0, 0, 0.5);
 	background-color: #252525;
-	margin-top: -15rem;
+	margin-top: -10rem;
 	h2 {
 		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
 			"Open Sans", "Helvetica Neue", sans-serif;
